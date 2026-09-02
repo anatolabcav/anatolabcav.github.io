@@ -1,0 +1,34 @@
+name: Atualizar notícias
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Baixar os feeds
+        run: node ferramentas/atualizar-noticias.js
+
+      - name: Publicar se mudou
+        run: |
+          if [ -z "$(git status --porcelain site/dados/ufpe.json)" ]; then
+            echo "Nenhuma notícia nova."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/dados/ufpe.json
+          git commit -m "$((100000 + RANDOM % 900000))"
+          git push

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "maca",
+    "nome": "Maçã",
+    "arquivo": "maca.png"
+  },
+  {
+    "id": "pizza",
+    "nome": "Pizza",
+    "arquivo": "pizza.png"
+  },
+  {
+    "id": "croissant",
+    "nome": "Croissant",
+    "arquivo": "croissant.png"
+  },
+  {
+    "id": "panquecas",
+    "nome": "Panquecas",
+    "arquivo": "panquecas.png"
+  },
+  {
+    "id": "sushi",
+    "nome": "Sushi",
+    "arquivo": "sushi.png"
+  },
+  {
+    "id": "hamburguer",
+    "nome": "Hambúrguer",
+    "arquivo": "hamburguer.png"
+  },
+  {
+    "id": "cafe",
+    "nome": "Café",
+    "arquivo": "cafe.png"
+  },
+  {
+    "id": "rosquinha",
+    "nome": "Rosquinha",
+    "arquivo": "rosquinha.png"
+  },
+  {
+    "id": "lamen",
+    "nome": "Lámen",
+    "arquivo": "lamen.png"
+  },
+  {
+    "id": "cachorro-quente",
+    "nome": "Cachorro-quente",
+    "arquivo": "cachorro-quente.png"
+  },
+  {
+    "id": "misto-quente",
+    "nome": "Misto quente",
+    "arquivo": "misto-quente.png"
+  },
+  {
+    "id": "banana",
+    "nome": "Banana",
+    "arquivo": "banana.png"
+  },
+  {
+    "id": "morango",
+    "nome": "Morango",
+    "arquivo": "morango.png"
+  },
+  {
+    "id": "abacaxi",
+    "nome": "Abacaxi",
+    "arquivo": "abacaxi.png"
+  },
+  {
+    "id": "melancia",
+    "nome": "Melancia",
+    "arquivo": "melancia.png"
+  },
+  {
+    "id": "cerejas",
+    "nome": "Cerejas",
+    "arquivo": "cerejas.png"
+  },
+  {
+    "id": "mirtilos",
+    "nome": "Mirtilos",
+    "arquivo": "mirtilos.png"
+  },
+  {
+    "id": "espetinho-de-frutas",
+    "nome": "Espetinho de frutas",
+    "arquivo": "espetinho-de-frutas.png"
+  },
+  {
+    "id": "bife",
+    "nome": "Bife",
+    "arquivo": "bife.png"
+  },
+  {
+    "id": "costelinha",
+    "nome": "Costelinha",
+    "arquivo": "costelinha.png"
+  },
+  {
+    "id": "frango-assado",
+    "nome": "Frango assado",
+    "arquivo": "frango-assado.png"
+  },
+  {
+    "id": "bacon",
+    "nome": "Bacon",
+    "arquivo": "bacon.png"
+  }
+]

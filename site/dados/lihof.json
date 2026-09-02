@@ -1,0 +1,36 @@
+{
+  "_como_editar": [
+    "Este arquivo é o mural do laboratório, e é dele que saem as notícias etiquetadas como Laboratório no site.",
+    "Ele aceita DUAS origens ao mesmo tempo.",
+    "1) FORMULÁRIO: `npm run mural` lê as respostas do formulário do Google e regenera os itens a partir delas. Publicar, editar e remover se fazem pelo próprio formulário: para remover, mude o campo 'Aparecer no site?' para Não na sua resposta.",
+    "2) À MÃO: qualquer item com \"manual\": true é preservado pelo script e nunca sobrescrito. É por aqui que se publica algo que não passou pelo formulário.",
+    "Para acrescentar um item à mão, copie um bloco de dentro de 'itens', cole no topo da lista e mantenha o \"manual\": true.",
+    "Campos: titulo (obrigatório), data no formato AAAA-MM-DD (obrigatório), link (obrigatório), resumo (opcional, até cerca de 160 caracteres), imagem (opcional, caminho como 'assets/noticias/foto.jpg' ou endereço https) e tags (opcional, das quais a primeira aparece no cartão).",
+    "Quando o campo imagem não é informado, o cartão exibe uma capa com a data da publicação, o que é um estado previsto e não um defeito.",
+    "Atenção à sintaxe: toda vírgula conta, e o último item da lista não leva vírgula depois da chave. Se as notícias sumirem do site, quase sempre há uma vírgula sobrando aqui.",
+    "No caso de uma publicação do Instagram, o link é o endereço do próprio post, obtido pela opção Copiar link."
+  ],
+  "itens": [
+    {
+      "titulo": "Anatomia Interativa: material didático para o ensino do sistema digestório",
+      "resumo": "Jogo de tabuleiro digital em que as equipes respondem a questões relativas ao órgão em que se encontram, conduzido pelo professor em projetor.",
+      "data": "2026-08-26",
+      "link": "jogos/anatomia-interativa.html",
+      "tags": [
+        "Extensão",
+        "Jogos"
+      ],
+      "manual": true
+    },
+    {
+      "titulo": "Acompanhe o laboratório no Instagram",
+      "resumo": "Os eventos, as aulas práticas e as chamadas de seleção são divulgados no perfil da liga acadêmica, @laecav.",
+      "data": "2026-08-01",
+      "link": "https://www.instagram.com/laecav/",
+      "tags": [
+        "Avisos"
+      ],
+      "manual": true
+    }
+  ]
+}

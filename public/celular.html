@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FBF4EC">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Anatomia Interativa · controle da equipe</title>
+<link rel="icon" href="assets/icons/maca.png">
+<link rel="stylesheet" href="assets/fontes/fontes.css">
+<script>
+(function(){try{if(localStorage.getItem("anatomia-tema")==="dia")
+document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
+</script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/celular.css">
+</head>
+<body>
+
+<div class="conexao" id="conexao" data-estado="ligando">
+  <span class="cx-bolha" aria-hidden="true"></span>
+  <span id="conexaoTexto">Conectando…</span>
+</div>
+
+<main class="tela" id="telaEntrar">
+  <header class="cabeca">
+    <div class="cabeca-linha">
+      <div class="marca">Anatomia Interativa<span class="ponto">.</span></div>
+      <button type="button" class="tema-jogo" aria-pressed="false"
+              aria-label="Mudar para o tema claro">
+        <span class="sol" aria-hidden="true">☀</span>
+        <span class="lua" aria-hidden="true">☾</span>
+      </button>
+    </div>
+    <p class="sub">Escolha a comida da sua equipe.</p>
+  </header>
+
+  <div class="escolhido" id="escolhido">
+    <img id="escolhidoImg" alt="">
+    <div class="escolhido-nome" id="escolhidoNome"></div>
+  </div>
+
+  <div class="galeria" id="galeria"></div>
+
+  <div class="rodape-fixo">
+    <label class="campo-nome">
+      <span>Nome da equipe</span>
+      <input type="text" id="campoNome" maxlength="28" autocomplete="off"
+             autocapitalize="words" placeholder="Ex.: Pizza">
+    </label>
+    <button type="button" class="botao-grande botao-entrar" id="botaoEntrar">Entrar no jogo</button>
+    <p class="aviso" id="avisoEntrar"></p>
+  </div>
+</main>
+
+<main class="tela oculta" id="telaEspera">
+  <div class="centro">
+    <img class="retrato" id="esperaImg" alt="">
+    <h1 class="equipe-nome" id="esperaNome"></h1>
+    <p class="explica">Prontos. O professor começa quando as outras equipes entrarem.</p>
+    <button type="button" class="botao-texto" id="botaoTrocar">trocar nome ou comida</button>
+  </div>
+  <div class="rodape-fixo">
+    <div class="lista-equipes" id="listaEsperaEquipes"></div>
+  </div>
+</main>
+
+<main class="tela oculta" id="telaJogo">
+  <header class="topo-jogo">
+    <img class="retrato-mini" id="jogoImg" alt="">
+    <div class="topo-textos">
+      <div class="topo-nome" id="jogoNome"></div>
+      <div class="topo-casa" id="jogoCasa">casa 1</div>
+    </div>
+    <div class="topo-relogio" id="jogoRelogio" hidden></div>
+  </header>
+
+  <div class="acao" id="acao">
+  </div>
+
+  <div class="rodape-fixo">
+    <div class="lista-equipes" id="listaEquipes"></div>
+  </div>
+</main>
+
+<main class="tela oculta" id="telaFim">
+  <div class="centro">
+    <img class="trofeu" id="fimTrofeu" src="assets/coco-vencedor.jpg"
+         alt="Um cocô campeão no pódio, com medalha e troféu">
+    <h1 class="equipe-nome" id="fimTexto"></h1>
+    <p class="explica" id="fimSub"></p>
+  </div>
+</main>
+
+<script src="js/tema.js"></script>
+<script src="js/celular.js"></script>
+</body>
+</html>

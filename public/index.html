@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anatomia Interativa</title>
+<link rel="icon" href="assets/icons/maca.png">
+<link rel="stylesheet" href="assets/fontes/fontes.css">
+<script>
+(function(){try{if(localStorage.getItem("anatomia-tema")==="dia")
+document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
+</script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/efeitos.css">
+<link rel="stylesheet" href="css/trato.css">
+</head>
+<body>
+
+<main id="tela-config" class="tela">
+  <header class="cfg-topo">
+    <div>
+      <div class="eyebrow">Anatomia · sistema digestório</div>
+      <h1 class="marca">Anatomia Interativa<span class="ponto">.</span></h1>
+    </div>
+    <div class="cfg-topo-lado">
+      <img class="credito-selo" src="assets/marca/ufpe.png"
+           alt="Universidade Federal de Pernambuco, Centro Acadêmico de Vitória">
+      <div class="botoes-som">
+        <button type="button" class="btn-som" id="botaoSom" aria-pressed="true">
+          <span class="som-icone" aria-hidden="true">♪</span><span id="somRotulo">Som ligado</span>
+        </button>
+        <button type="button" class="btn-som" id="botaoMusica" aria-pressed="true">
+          <span class="som-icone" aria-hidden="true">♬</span><span id="musicaRotulo">Música</span>
+        </button>
+        <button type="button" class="tema-jogo" id="botaoTema"
+                aria-pressed="false" aria-label="Mudar para o tema claro">
+          <span class="sol" aria-hidden="true">☀</span>
+          <span class="lua" aria-hidden="true">☾</span>
+        </button>
+      </div>
+      <a class="link-discreto" href="#" id="linkDiagnostico">Onde procurei a planilha?</a>
+    </div>
+  </header>
+
+  <div class="cfg-corpo">
+
+    <details class="cartao--estado" id="cartaoPlanilha" open>
+      <summary class="cartao-cabeca">
+        <h2 class="cartao-titulo"><span class="num">01</span> As perguntas</h2>
+      </summary>
+      <p class="cartao-desc">O jogo procura sozinho um <code>Perguntas.xlsx</code> na sua área de trabalho.</p>
+
+      <div class="planilha-estado" id="planilhaEstado" data-estado="carregando">
+        <div class="pe-bolha" aria-hidden="true"></div>
+        <div class="pe-texto">
+          <b id="planilhaTitulo">Procurando a planilha…</b>
+          <span id="planilhaDetalhe">um instante</span>
+        </div>
+      </div>
+
+      <div class="linha-botoes">
+        <button type="button" class="btn btn-fantasma" id="botaoReprocurar">Procurar de novo</button>
+        <button type="button" class="btn btn-fantasma" id="botaoEscolherArquivo">Escolher outro arquivo…</button>
+        <input type="file" id="arquivoPlanilha" accept=".xlsx,.xls,.csv" hidden>
+      </div>
+    </details>
+
+    <details class="cartao--trabalho" id="cartaoEquipes" open>
+      <summary class="cartao-cabeca">
+        <h2 class="cartao-titulo"><span class="num">02</span> As equipes</h2>
+      </summary>
+      <p class="cartao-desc">De 2 a 6. Clique no quadrado para escolher a comida da equipe. É ela que vai atravessar o trato.</p>
+      <div class="equipes-lista" id="equipesLista"></div>
+      <div class="linha-botoes">
+        <button type="button" class="btn btn-fantasma" id="botaoAddEquipe">+ Adicionar equipe</button>
+      </div>
+    </details>
+
+    <details class="cartao--estado" id="cartaoCelulares">
+      <summary class="cartao-cabeca">
+        <h2 class="cartao-titulo"><span class="num">03</span> Os celulares</h2>
+      </summary>
+      <p class="cartao-desc">
+        Cada equipe entra pelo próprio telefone: rola o dado, escolhe a
+        alternativa e disputa o roubo no reflexo. Dá para jogar sem isto: aí o
+        dado e o roubo ficam nos botões do professor.
+      </p>
+
+      <div class="celulares-caixa">
+        <div class="qr-moldura" id="qrMoldura">
+          <img id="qrImagem" alt="QR code para as equipes entrarem" hidden>
+          <div class="qr-vazio" id="qrVazio">sem rede</div>
+        </div>
+        <div class="celulares-info">
+          <div class="celulares-estado" id="celularesEstado" data-estado="esperando">
+            <span class="ce-bolha" aria-hidden="true"></span>
+            <b id="celularesTitulo">Procurando a rede…</b>
+          </div>
+          <p class="celulares-endereco" id="celularesEndereco"></p>
+          <p class="cartao-nota" id="celularesDica">
+            O notebook e os celulares precisam estar no <b>mesmo hotspot</b>.
+          </p>
+        </div>
+      </div>
+    </details>
+
+    <details class="cartao--trabalho" id="cartaoRegras">
+      <summary class="cartao-cabeca">
+        <h2 class="cartao-titulo"><span class="num">04</span> Tempos e regras</h2>
+      </summary>
+      <div class="campos">
+        <label class="campo">
+          <span>Tempo da vez</span>
+          <div class="campo-num"><input type="number" id="tempoVez" min="5" max="300" step="5" value="30"><i>seg</i></div>
+          <small>para a equipe da vez responder</small>
+        </label>
+        <label class="campo">
+          <span>Tempo do roubo</span>
+          <div class="campo-num"><input type="number" id="tempoRoubo" min="5" max="300" step="5" value="15"><i>seg</i></div>
+          <small>para quem apertar “Tentar!”</small>
+        </label>
+        <label class="campo">
+          <span>Bônus do roubo</span>
+          <div class="campo-num"><input type="number" id="bonusRoubo" min="1" max="6" step="1" value="2"><i>casas</i></div>
+          <small>quanto anda quem rouba certo</small>
+        </label>
+        <label class="campo">
+          <span>Casas de penalidade</span>
+          <div class="campo-num"><input type="number" id="qtdPenalidades" min="0" max="16" step="1" value="7"><i>casas</i></div>
+          <small>sorteadas ao iniciar</small>
+        </label>
+        <label class="campo">
+          <span>Casas de vantagem</span>
+          <div class="campo-num"><input type="number" id="qtdVantagens" min="0" max="16" step="1" value="7"><i>casas</i></div>
+          <small>também sorteadas, e nunca na mesma casa</small>
+        </label>
+      </div>
+
+      <label class="chave" for="rouboLigado">
+        <input type="checkbox" id="rouboLigado" checked>
+        <span class="chave-corpo" aria-hidden="true"><i></i></span>
+        <span class="chave-texto">
+          <b>Roubo ligado</b>
+          <small>quando a equipe da vez erra, as outras podem tentar a mesma pergunta</small>
+        </span>
+      </label>
+
+      <label class="chave" for="abertasLigadas">
+        <input type="checkbox" id="abertasLigadas" checked>
+        <span class="chave-corpo" aria-hidden="true"><i></i></span>
+        <span class="chave-texto">
+          <b>Perguntas abertas</b>
+          <small id="abertasNota">as sem alternativa, respondidas em voz alta e julgadas por você</small>
+        </span>
+      </label>
+    </details>
+
+    <details class="cartao--catalogo" id="cartaoPenalidades">
+      <summary class="cartao-cabeca">
+        <h2 class="cartao-titulo"><span class="num">05</span> As penalidades</h2>
+      </summary>
+      <div class="pen-lista" id="penLista"></div>
+      <p class="cartao-nota" id="penAviso"></p>
+    </details>
+
+    <details class="cartao--catalogo" id="cartaoVantagens">
+      <summary class="cartao-cabeca">
+        <h2 class="cartao-titulo"><span class="num">06</span> As vantagens</h2>
+      </summary>
+      <div class="pen-lista" id="vanLista"></div>
+      <p class="cartao-nota" id="vanAviso"></p>
+    </details>
+
+  </div>
+
+  <footer class="cfg-rodape">
+    <div class="cfg-resumo" id="cfgResumo"></div>
+    <button type="button" class="btn btn-iniciar" id="botaoIniciar" disabled>Iniciar partida</button>
+  </footer>
+</main>
+
+<main id="tela-jogo" class="tela oculta">
+
+  <div class="jogo-grade">
+
+    <div class="coluna-palco">
+
+      <div class="palco-caixa" id="palcoCaixa">
+        <div class="stage palco" id="stage">
+          <div class="camera" id="camera">
+            <img class="tabuleiro" id="tabuleiro" src="assets/board.svg" alt="Tabuleiro do sistema digestório, 50 casas da boca ao ânus">
+
+            <svg class="pecas" id="pecas" viewBox="0 0 1200 675" aria-hidden="true"></svg>
+          </div>
+
+          <div class="inner-frame"></div>
+          <div class="hint" id="hint" hidden></div>
+
+          <div class="veu" id="veu"></div>
+
+          <canvas class="confetti" id="confetti"></canvas>
+
+          <div class="banner" id="banner">
+            <div class="badge" id="bannerBadge">E</div>
+            <div class="who"><small>Vez da equipe</small><b id="bannerName"></b></div>
+          </div>
+
+          <div class="dice" id="dice" data-f="6">
+            <span class="pip p1"></span><span class="pip p2"></span><span class="pip p3"></span>
+            <span class="pip p4"></span><span class="pip p5"></span><span class="pip p6"></span>
+            <span class="pip p7"></span><span class="pip p8"></span><span class="pip p9"></span>
+          </div>
+
+          <div class="qcard" id="qcard">
+            <div class="qkick" id="qkick">Pergunta</div>
+            <div class="qtext" id="qtext"></div>
+            <div class="alts" id="qalts"></div>
+            <div class="qbar"><i id="qbarFill"></i></div>
+          </div>
+
+          <div class="timer" id="timer">
+            <svg width="96" height="96" viewBox="0 0 96 96">
+              <circle cx="48" cy="48" r="42" fill="none" stroke="#EEE3D4" stroke-width="8"/>
+              <circle id="timerArc" cx="48" cy="48" r="42" fill="none" stroke="#54D49C" stroke-width="8"
+                      stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="0"/>
+            </svg>
+            <div class="num" id="timerNum"></div>
+          </div>
+
+          <div class="verdict" id="verdict">
+            <div class="mark" id="verdictMark">✓</div>
+            <div class="lbl" id="verdictLbl">Acertou!</div>
+            <div class="plus" id="verdictPlus"></div>
+          </div>
+
+          <div class="steal" id="steal">
+            <div class="box">
+              <div class="t">Roubo! Quem souber, aperte Tentar!</div>
+              <div class="teams" id="stealTeams"></div>
+            </div>
+          </div>
+
+          <div class="penalty" id="penalty">
+            <div class="card">
+              <div class="tag" id="penTag">Casa de penalidade</div>
+              <div class="nm" id="penNm"></div>
+              <div class="ef" id="penEf"></div>
+            </div>
+          </div>
+
+          <div class="win" id="win">
+            <div class="card">
+              <div class="win-premio">
+                <img class="win-coco" src="assets/coco-vencedor.jpg"
+                     alt="Um cocô campeão no pódio, com medalha e troféu">
+                <img class="win-equipe" id="winIcone" alt="" hidden>
+              </div>
+              <div class="s">Parabéns</div>
+              <div class="t" id="winName"></div>
+            </div>
+          </div>
+
+          <div class="count" id="count"><div class="n" id="countN">3</div></div>
+
+          <div class="region" id="region"><b id="regionB"></b></div>
+          <div class="toasts" id="toasts"></div>
+        </div>
+      </div>
+
+      <div class="controles" id="controles">
+        <div class="controles-dica" id="controlesDica"></div>
+        <div class="controles-botoes" id="controlesBotoes">
+          <button type="button" class="btn btn-grande btn-dado"    id="btnDado">Rolar o dado</button>
+          <button type="button" class="btn btn-grande btn-acertou" id="btnAcertou">Acertou</button>
+          <button type="button" class="btn btn-grande btn-errou"   id="btnErrou">Errou</button>
+          <button type="button" class="btn btn-grande btn-tempo"   id="btnTempoAcabou">Tempo esgotado</button>
+          <button type="button" class="btn btn-grande btn-passar"  id="btnProxima">Passar a vez</button>
+        </div>
+        <div class="roubo-escolha oculta" id="rouboEscolha">
+          <span class="roubo-rotulo">Quem apertou primeiro?</span>
+          <div class="roubo-botoes" id="rouboBotoes"></div>
+          <button type="button" class="btn btn-fantasma" id="btnRouboNinguem">Ninguém tentou</button>
+        </div>
+      </div>
+    </div>
+
+    <aside class="painel">
+      <div class="painel-topo">
+        <div class="painel-marca">
+          <div class="marca-mini">Anatomia Interativa<span class="ponto">.</span></div>
+          <img class="credito-selo mini" src="assets/marca/ufpe.png"
+               alt="Universidade Federal de Pernambuco, Centro Acadêmico de Vitória">
+        </div>
+        <div class="botoes-som">
+          <button type="button" class="btn-som mini" id="botaoVertical" aria-pressed="false"
+                  title="Vira o tabuleiro para uma tela em pé. O mapa não encolhe: a tela mostra um trecho e acompanha a equipe da vez.">
+            <span class="som-icone" aria-hidden="true">⟳</span><span id="verticalRotulo">Deitado</span>
+          </button>
+          <button type="button" class="btn-som mini" id="botaoSom2" aria-pressed="true">
+            <span class="som-icone" aria-hidden="true">♪</span><span id="somRotulo2">Som</span>
+          </button>
+          <button type="button" class="btn-som mini" id="botaoMusica2" aria-pressed="true">
+            <span class="som-icone" aria-hidden="true">♬</span><span id="musicaRotulo2">Música</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="placar" id="placar"></div>
+
+      <div class="painel-info">
+        <div class="info-linha"><span>Perguntas</span><b id="infoPerguntas"></b></div>
+        <div class="info-linha"><span>Rodada</span><b id="infoRodada"></b></div>
+      </div>
+
+      <div class="painel-casas">
+        <div class="casas-bloco" data-familia="penalidade">
+          <span class="casas-rotulo">Penalidades</span>
+          <div class="casas-lista" id="infoPenalidades"></div>
+        </div>
+        <div class="casas-bloco" data-familia="vantagem">
+          <span class="casas-rotulo">Vantagens</span>
+          <div class="casas-lista" id="infoVantagens"></div>
+        </div>
+      </div>
+
+      <div class="painel-rodape">
+        <button type="button" class="btn btn-fantasma pequeno" id="btnReembaralhar">Reembaralhar perguntas</button>
+        <button type="button" class="btn btn-fantasma pequeno" id="btnVoltarConfig">Encerrar partida</button>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<div class="voo" id="voo" aria-hidden="true"></div>
+
+<dialog id="dialogoIcones" class="dialogo">
+  <form method="dialog">
+    <h3 class="dialogo-titulo">A comida desta equipe</h3>
+    <div class="galeria" id="galeriaIcones"></div>
+    <div class="galeria-upload">
+      <label class="btn btn-fantasma" for="uploadIcone">Usar uma imagem minha…</label>
+      <input type="file" id="uploadIcone" accept="image/*" hidden>
+      <button class="btn btn-fantasma" value="cancelar">Fechar</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="js/tema.js"></script>
+<script src="js/aviso.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/tabuleiro.js"></script>
+<script src="js/sincronia.js"></script>
+<script src="js/som.js"></script>
+<script src="js/config.js"></script>
+<script src="js/jogo.js"></script>
+</body>
+</html>

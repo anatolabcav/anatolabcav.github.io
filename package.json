@@ -1,0 +1,21 @@
+{
+  "name": "anatomia-interativa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anatomia Interativa: jogo de tabuleiro educativo do sistema digestorio (Anatomia)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "noticias": "node ferramentas/atualizar-noticias.js",
+    "instagram": "node ferramentas/atualizar-instagram.js",
+    "site": "node ferramentas/servir-site.js",
+    "empacotar": "node ferramentas/empacotar-jogo.js",
+    "mural": "node ferramentas/atualizar-mural.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "qrcode": "^1.5.4",
+    "ws": "^8.18.0",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_como_editar": [
+    "Este arquivo alimenta a seção 'No Instagram' da página inicial.",
+    "Ele aceita DUAS origens ao mesmo tempo, e é de propósito.",
+    "1) AUTOMÁTICA: `node ferramentas/atualizar-instagram.js` busca os posts pela API da Meta e reescreve os itens SEM 'manual': true. Exige um token, e o passo a passo está no cabeçalho do script.",
+    "2) MANUAL: qualquer item com \"manual\": true é preservado pelo script e nunca sobrescrito. É por aqui que se publica um post de um perfil que ainda não autorizou o aplicativo.",
+    "Para acrescentar um post à mão, copie um bloco de dentro de 'itens', cole no topo da lista e preencha:",
+    "  perfil   (obrigatório) 'lihof' ou 'laecav', tem de bater com uma chave de 'perfis'",
+    "  legenda  (obrigatório) o texto do cartão, até cerca de 140 caracteres",
+    "  data     (obrigatório) AAAA-MM-DD, é ela que ordena a lista",
+    "  link     (obrigatório) o endereço do post, obtido pela opção Copiar link do Instagram",
+    "  imagem   (opcional) caminho como 'assets/instagram/foto.jpg' ou endereço https",
+    "  manual   (obrigatório nos itens escritos à mão) true",
+    "NÃO use o endereço de imagem que aparece no Instagram: ele expira em poucas horas e o cartão fica quebrado. Baixe a imagem, salve em site/assets/instagram/ e aponte para o arquivo local.",
+    "Sem imagem o cartão mostra uma capa com a data, que é um estado previsto e não um defeito.",
+    "Com a lista de itens vazia a seção inteira some da página, em vez de aparecer anunciando que está vazia.",
+    "Atenção à sintaxe: toda vírgula conta, e o último item da lista não leva vírgula depois da chave."
+  ],
+  "perfis": {
+    "lihof": {
+      "nome": "LIHOF",
+      "usuario": "lihofcavufpe",
+      "url": "https://www.instagram.com/lihofcavufpe/"
+    },
+    "laecav": {
+      "nome": "Liga acadêmica",
+      "usuario": "laecav",
+      "url": "https://www.instagram.com/laecav/"
+    }
+  },
+  "atualizado": null,
+  "itens": []
+}

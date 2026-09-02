@@ -1,0 +1,14 @@
+node_modules/
+
+Perguntas.xlsx
+
+~$*.xlsx
+
+.env
+.env.*
+
+Thumbs.db
+desktop.ini
+.DS_Store
+
+anatomia-interativa.zip
