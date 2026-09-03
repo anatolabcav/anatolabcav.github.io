@@ -116,6 +116,127 @@
     alvos.forEach(function (el) { obs.observe(el); });
   }
 
+  function ajustaTitulo() {
+    var titulo = $('.abertura h1');
+    if (!titulo) return;
+
+    var linhas = $$('.revela', titulo);
+    if (!linhas.length) return;
+
+    var caixa = titulo.clientWidth;
+    if (!caixa) return;
+
+    linhas.forEach(function (linha) {
+      if (linha.dataset.base === undefined) {
+        linha.dataset.base = parseFloat(getComputedStyle(titulo).fontSize);
+      }
+
+      var tamanho = parseFloat(linha.dataset.base);
+      var faixa = document.createRange();
+      var passo;
+
+      for (passo = 0; passo < 4; passo++) {
+        linha.style.fontSize = tamanho.toFixed(2) + 'px';
+        faixa.selectNodeContents(linha);
+        var largura = faixa.getBoundingClientRect().width;
+        if (!largura) return;
+        if (Math.abs(largura - caixa) < 0.5) break;
+        tamanho = tamanho * caixa / largura;
+      }
+    });
+  }
+
+  function rolos() {
+    var alvos = $$('[data-rolo]');
+    if (!alvos.length) return;
+    if (menosMovimento.matches) return;
+
+    var ALFA = 'abcdefghijklmnopqrstuvwxyz';
+    var ALTURA = 1.2;
+
+    function sorteia() {
+      return ALFA.charAt(Math.floor(Math.random() * ALFA.length));
+    }
+
+    alvos.forEach(function (alvo) {
+      var texto = (alvo.textContent || '').trim();
+      if (!texto) return;
+
+      alvo.textContent = '';
+      alvo.classList.add('rolo-palavra');
+
+      var leitor = document.createElement('span');
+      leitor.className = 'so-leitor';
+      leitor.textContent = texto;
+      alvo.appendChild(leitor);
+
+      var regua = document.createElement('span');
+      regua.className = 'rolo-regua';
+      regua.setAttribute('aria-hidden', 'true');
+      alvo.appendChild(regua);
+
+      function largura(ch) {
+        regua.textContent = ch;
+        return regua.getBoundingClientRect().width;
+      }
+
+      var fitas = [];
+
+      texto.split('').forEach(function (letra) {
+        var janela = document.createElement('span');
+        janela.className = 'rolo';
+        janela.setAttribute('aria-hidden', 'true');
+        janela.style.width = largura(letra).toFixed(2) + 'px';
+
+        var fita = document.createElement('span');
+        fita.className = 'rolo-fita';
+
+        var vazia = document.createElement('span');
+        vazia.className = 'rolo-letra';
+        vazia.textContent = ' ';
+        fita.appendChild(vazia);
+
+        var passos = 6 + Math.floor(Math.random() * 6);
+        var i;
+        for (i = 0; i < passos; i++) {
+          var falsa = document.createElement('span');
+          falsa.className = 'rolo-letra' + (i % 3 === 1 ? ' rolo-letra--eco' : '');
+          falsa.textContent = sorteia();
+          fita.appendChild(falsa);
+        }
+
+        var certa = document.createElement('span');
+        certa.className = 'rolo-letra';
+        certa.textContent = letra;
+        fita.appendChild(certa);
+
+        janela.appendChild(fita);
+        alvo.appendChild(janela);
+        fitas.push({ janela: janela, fita: fita, passos: passos + 1 });
+      });
+
+      regua.textContent = '';
+
+      fitas.forEach(function (r, i) {
+        var duracao = 900 + r.passos * 70;
+
+        r.fita.addEventListener('transitionend', function () {
+          while (r.fita.childNodes.length > 1) r.fita.removeChild(r.fita.firstChild);
+          r.fita.style.transition = 'none';
+          r.fita.style.transform = 'none';
+          r.fita.style.willChange = 'auto';
+          r.janela.classList.remove('rolo--girando');
+        });
+
+        setTimeout(function () {
+          r.janela.classList.add('rolo--girando');
+          r.fita.style.transition = 'transform ' + duracao + 'ms cubic-bezier(.16,1,.28,1)';
+          r.fita.style.transform = 'translateY(' + (-r.passos * ALTURA) + 'em)';
+        }, 1050 + i * 70);
+      });
+    });
+  }
+
   function contadores() {
     var alvos = $$('[data-conta]');
     if (!alvos.length) return;
@@ -302,6 +423,31 @@
   } else {
     inicia();
   }
+
+  function tituloPronto() {
+    ajustaTitulo();
+    rolos();
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(tituloPronto);
+  } else {
+    window.addEventListener('load', tituloPronto);
+  }
+
+  var reajuste;
+  window.addEventListener('resize', function () {
+    clearTimeout(reajuste);
+    reajuste = setTimeout(function () {
+      $$('[data-rolo]').forEach(function (alvo) {
+        var leitor = $('.so-leitor', alvo);
+        if (!leitor) return;
+        alvo.classList.remove('rolo-palavra');
+        alvo.textContent = leitor.textContent;
+      });
+      ajustaTitulo();
+    }, 180);
+  });
 
   window.SiteLab = { entradas: entradas };
 })();
