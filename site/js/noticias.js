@@ -223,6 +223,26 @@
 
     var casaPrimeiro = lugar.hasAttribute('data-destaque');
 
+    var passo = parseInt(lugar.getAttribute('data-passo'), 10) || 0;
+    var mostrando = passo;
+    var mais = null;
+
+    function botaoMais(restam) {
+      if (!mais) {
+        mais = document.createElement('div');
+        mais.className = 'mais-itens';
+        mais.innerHTML = '<button class="botao botao--linha" type="button"></button>';
+        lugar.parentNode.insertBefore(mais, lugar.nextSibling);
+        mais.firstChild.addEventListener('click', function () {
+          mostrando += passo;
+          desenha();
+        });
+      }
+      mais.firstChild.textContent = 'Ver mais ' + Math.min(passo, restam) +
+        (restam === 1 ? ' notícia' : ' notícias');
+      mais.hidden = false;
+    }
+
     function lista() {
       var base = fonteAtual === 'lihof' ? lihof
                : fonteAtual === 'ufpe' ? ufpe
@@ -241,6 +261,8 @@
     function desenha() {
       var itens = lista();
 
+      if (mais) mais.hidden = true;
+
       if (!itens.length) {
         var nadaCarregou = !brutos[0] && !brutos[1];
         lugar.innerHTML = '<div class="vazio">' + (nadaCarregou
@@ -252,7 +274,15 @@
         return;
       }
 
+      var restam = 0;
+      if (passo && itens.length > mostrando) {
+        restam = itens.length - mostrando;
+        itens = itens.slice(0, mostrando);
+      }
+
       lugar.innerHTML = itens.map(function (n) { return cartao(n, raiz); }).join('');
+
+      if (restam) botaoMais(restam);
 
       $$('.noticia-capa img', lugar).forEach(function (img) {
         img.addEventListener('error', function () {
@@ -273,6 +303,7 @@
           $$('.filtro', painel).forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
           b.setAttribute('aria-pressed', 'true');
           fonteAtual = b.getAttribute('data-fonte') || 'todas';
+          mostrando = passo;
           desenha();
         });
       });
@@ -284,6 +315,7 @@
         clearTimeout(esperando);
         esperando = setTimeout(function () {
           termo = campo.value.trim();
+          mostrando = passo;
           desenha();
         }, 160);
       });
