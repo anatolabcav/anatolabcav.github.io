@@ -31,8 +31,6 @@
   --aurora-b:rgba(120,110,255,.10);
   --aurora-c:rgba(56,200,190,.08);
 
-  --barra:rgba(236,230,218,.09);
-  --barra-viva:rgba(236,230,218,.24);
 }
 
 [data-tema="dia"]{
@@ -65,8 +63,6 @@
   --aurora-b:rgba(120,110,255,.07);
   --aurora-c:rgba(20,120,115,.06);
 
-  --barra:rgba(20,23,26,.10);
-  --barra-viva:rgba(20,23,26,.26);
 }
 
 :root{
@@ -102,18 +98,12 @@ html{
   scroll-behavior:smooth;
   scroll-padding-top:120px;
   -webkit-text-size-adjust:100%;
-  scrollbar-width:thin;
-  scrollbar-color:var(--barra) transparent;
+  scrollbar-width:none;
 }
 
-::-webkit-scrollbar{width:7px;height:7px;background:transparent}
-::-webkit-scrollbar-track{background:transparent;border:none}
-::-webkit-scrollbar-thumb{
-  background:var(--barra);
-  border-radius:99px;
-  transition:background .3s var(--ease);
-}
-::-webkit-scrollbar-thumb:hover,::-webkit-scrollbar-thumb:active{background:var(--barra-viva)}
+::-webkit-scrollbar{width:0;height:0;background:transparent}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:transparent}
 ::-webkit-scrollbar-corner{background:transparent}
 
 body{
@@ -471,6 +461,12 @@ p{margin:0}
   text-align:left;
 }
 .abertura h1 .revela{white-space:nowrap}
+.abertura h1 .linha-menor{
+  font-size:clamp(16px,1.9vw,26px);
+  letter-spacing:0;
+  margin-top:var(--e4);
+}
+.abertura h1 .conector{color:#FF5A6E}
 .abertura h1 em{font-style:normal;color:#FFA3AE}
 
 .so-leitor{
@@ -479,7 +475,7 @@ p{margin:0}
   clip:rect(0 0 0 0); clip-path:inset(50%);
   white-space:nowrap; border:0;
 }
-.rolo-palavra{display:inline-block;white-space:nowrap}
+.rolo-palavra{white-space:nowrap}
 .rolo{
   display:inline-block;
   overflow:hidden;
@@ -491,7 +487,10 @@ p{margin:0}
   mask-image:linear-gradient(180deg,transparent 0,#000 24%,#000 76%,transparent 100%);
 }
 .rolo-fita{display:block;will-change:transform}
-.rolo-letra{display:block;width:100%;height:1.2em;line-height:1.2em;text-align:center;overflow:hidden}
+.rolo-letra{
+  display:block;width:100%;height:1.2em;line-height:1.2em;
+  letter-spacing:0;text-align:center;overflow:hidden;
+}
 .rolo-regua{position:absolute;visibility:hidden;white-space:pre;left:-9999px;top:-9999px}
 .rolo-letra--eco{color:var(--rubro-vivo);opacity:.55}
 .abertura .linha-fina{
@@ -501,30 +500,6 @@ p{margin:0}
   max-width:52ch;
 }
 .abertura-acoes{display:flex;flex-wrap:wrap;gap:var(--e3);margin-top:var(--e7)}
-
-.rolar{
-  position:absolute; left:50%; transform:translateX(-50%); bottom:var(--e8); z-index:2;
-  display:flex; align-items:center; gap:var(--e3);
-  font-family:var(--mono); font-size:var(--t1);
-  letter-spacing:.2em; text-transform:uppercase;
-  color:rgba(255,255,255,.6);
-  transition:opacity .4s var(--ease);
-}
-.rolar i{
-  display:block;width:1px;height:48px;
-  background:linear-gradient(rgba(255,255,255,.5),transparent);
-  position:relative;overflow:hidden;
-}
-.rolar i::after{
-  content:"";position:absolute;inset:0;
-  background:var(--rubro-vivo);
-  animation:desce 2.2s var(--ease) infinite;
-}
-@keyframes desce{
-  0%{transform:translateY(-100%)}
-  60%,100%{transform:translateY(100%)}
-}
-.topo.desceu ~ main .rolar{opacity:0}
 
 .numeros{
   display:grid;
@@ -1192,7 +1167,6 @@ code{
   .topo-caixa{height:70px}
   .marca-barra,.marca-texto{display:none}
   .abertura{min-height:92svh}
-  .rolar{display:none}
   .faixa{min-height:auto}
   .faixa-texto{padding-block:var(--e8)}
   .definicoes>div{grid-template-columns:1fr;gap:var(--e2)}

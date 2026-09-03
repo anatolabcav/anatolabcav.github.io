@@ -120,7 +120,7 @@
     var titulo = $('.abertura h1');
     if (!titulo) return;
 
-    var linhas = $$('.revela', titulo);
+    var linhas = $$('.revela[data-largura]', titulo);
     if (!linhas.length) return;
 
     var caixa = titulo.clientWidth;
@@ -173,20 +173,24 @@
       var regua = document.createElement('span');
       regua.className = 'rolo-regua';
       regua.setAttribute('aria-hidden', 'true');
+      regua.textContent = texto;
       alvo.appendChild(regua);
 
-      function largura(ch) {
-        regua.textContent = ch;
-        return regua.getBoundingClientRect().width;
-      }
+      var trecho = document.createRange();
+      var no = regua.firstChild;
+      var larguras = texto.split('').map(function (letra, i) {
+        trecho.setStart(no, i);
+        trecho.setEnd(no, i + 1);
+        return trecho.getBoundingClientRect().width;
+      });
 
       var fitas = [];
 
-      texto.split('').forEach(function (letra) {
+      texto.split('').forEach(function (letra, ordem) {
         var janela = document.createElement('span');
         janela.className = 'rolo';
         janela.setAttribute('aria-hidden', 'true');
-        janela.style.width = largura(letra).toFixed(2) + 'px';
+        janela.style.width = larguras[ordem].toFixed(2) + 'px';
 
         var fita = document.createElement('span');
         fita.className = 'rolo-fita';
@@ -215,7 +219,7 @@
         fitas.push({ janela: janela, fita: fita, passos: passos + 1 });
       });
 
-      regua.textContent = '';
+      alvo.removeChild(regua);
 
       fitas.forEach(function (r, i) {
         var duracao = 900 + r.passos * 70;
@@ -436,7 +440,10 @@
   }
 
   var reajuste;
+  var larguraAnterior = window.innerWidth;
   window.addEventListener('resize', function () {
+    if (window.innerWidth === larguraAnterior) return;
+    larguraAnterior = window.innerWidth;
     clearTimeout(reajuste);
     reajuste = setTimeout(function () {
       $$('[data-rolo]').forEach(function (alvo) {
