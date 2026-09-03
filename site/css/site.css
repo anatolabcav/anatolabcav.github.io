@@ -460,19 +460,6 @@ p{margin:0}
 }
 .abertura-acoes{display:flex;flex-wrap:wrap;gap:var(--e3);margin-top:var(--e7)}
 
-.abertura-pe{
-  display:flex; flex-wrap:wrap; gap:var(--e7);
-  margin-top:var(--e9);
-  padding-top:var(--e5);
-  border-top:1px solid rgba(255,255,255,.18);
-}
-.abertura-pe div{display:flex;flex-direction:column;gap:2px}
-.abertura-pe dt,.abertura-pe b{
-  font-family:var(--mono);font-size:var(--t1);font-weight:400;
-  letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);
-}
-.abertura-pe dd,.abertura-pe span{margin:0;font-size:var(--t3);color:#fff}
-
 .rolar{
   position:absolute; right:var(--borda-pagina); bottom:var(--e8); z-index:2;
   display:flex; align-items:center; gap:var(--e3);
@@ -1163,7 +1150,6 @@ code{
   .topo-caixa{height:70px}
   .marca-barra,.marca-texto{display:none}
   .abertura{min-height:92svh}
-  .abertura-pe{gap:var(--e5);margin-top:var(--e7)}
   .rolar{display:none}
   .faixa{min-height:auto}
   .faixa-texto{padding-block:var(--e8)}
