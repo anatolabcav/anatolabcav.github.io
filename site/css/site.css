@@ -416,8 +416,8 @@ p{margin:0}
 .abertura{
   position:relative;
   min-height:100svh;
-  display:flex; align-items:flex-end;
-  padding-block:var(--e9) var(--e8);
+  display:flex; align-items:center;
+  padding-block:var(--e9);
   overflow:hidden;
   isolation:isolate;
 }
