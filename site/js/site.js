@@ -91,6 +91,7 @@
 
     var pais = [];
     $$('.revela').forEach(function (el) {
+      if (el.hasAttribute('data-rolo') || $('[data-rolo]', el)) return;
       var pai = el.parentElement;
       if (pai && !pai.classList.contains('dentro') && pais.indexOf(pai) < 0) {
         pais.push(pai);
@@ -431,6 +432,8 @@
   function tituloPronto() {
     ajustaTitulo();
     rolos();
+    var titulo = $('.abertura h1');
+    if (titulo) titulo.classList.add('dentro');
   }
 
   if (document.fonts && document.fonts.ready) {
