@@ -1,41 +1,278 @@
 {
   "_leia": "Arquivo GERADO por ferramentas/atualizar-noticias.js. Não edite à mão — a próxima execução sobrescreve tudo. As notícias do laboratório ficam em lihof.json.",
-  "atualizado": "2026-09-05T06:20:07.915Z",
+  "atualizado": "2026-09-21T06:23:55.102Z",
   "itens": [
     {
-      "titulo": "Pesquisas da UFPE são destaque no Prêmio Capes de Tese 2026",
-      "resumo": "Considerado o “Oscar” da ciência da brasileira, a premiação reconhece os melhores trabalhos de doutorado defendidos em programas de pós-graduação do país. Assessoria…",
-      "data": "2026-09-04",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7465909",
-      "fonte": "UFPE",
+      "titulo": "Parque.TeC UFPE divulga resultado final do Edital das Unidades de Empreendedorismo e Inovação (UEIs)",
+      "resumo": "A iniciativa contempla a implementação de novas UEIs e o apoio à manutenção das já existentes",
+      "data": "2026-09-18",
+      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7488138",
+      "fonte": "CAV/UFPE",
       "tags": [
-        "Universidade"
+        "Campus"
       ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/04.09.26+Miniatura+_1premio+capes+.png/0ab08da1-f745-4a15-86b6-eeff878180fd?t=1788548137848",
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/18.09.26+fotParquetec.png/5f99e960-1e3d-4fa3-850c-68a787802317?t=1789755588534",
       "visto": true
     },
     {
-      "titulo": "UFPE assina contrato para obras de acessibilidade da Faculdade de Direito",
-      "resumo": "Na mesma ocasião, foi apresentado o orçamento do projeto arquitetônico da Etapa 1 das obras de restauro do prédio. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-09-04",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7466227",
+      "titulo": "Professor da FDR é escolhido como desembargador eleitoral para o TRE-PE",
+      "resumo": "Alexandre ingressou na magistratura estadual em 1992, após ter exercido a advocacia e o cargo de promotor de Justiça. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-18",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7488173",
       "fonte": "UFPE",
       "tags": [
         "Universidade"
       ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/04.09.26+Miniatura+2+fdr.png/2e18f1fe-6441-469c-a93f-9f77a9043ba5?t=1788551307625",
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/18.09.26+fotAlexandrePimentel.png/3b1f2096-cd9d-4e7d-9edd-ae4d0accb239?t=1789755584004",
       "visto": true
     },
     {
-      "titulo": "Palestra marca início da programação do Conexões Pedagógicas 2026",
-      "resumo": "A edição deste ano está sendo realizada de forma itinerante, com palestras presenciais nos campi Recife, Sertânia, Caruaru e Vitória. Assessoria de Comunicação Social…",
-      "data": "2026-09-04",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7465898",
+      "titulo": "Parque.TeC UFPE divulga resultado final do Edital das Unidades de Empreendedorismo e Inovação (UEIs)",
+      "resumo": "A iniciativa contempla a implementação de novas UEIs e o apoio à manutenção das já existentes. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-18",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7488138",
       "fonte": "UFPE",
       "tags": [
         "Universidade"
       ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/04.09.26+Miniatura+_1conex%C3%B5es+pedag%C3%B3gicas+.png/2c923d77-e5ac-4ae4-850e-ffaf251d5d9e?t=1788548210664",
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/18.09.26+fotParquetec.png/5f99e960-1e3d-4fa3-850c-68a787802317?t=1789755588534",
+      "visto": true
+    },
+    {
+      "titulo": "Serviço-Escola de Nutrição Emília Aureliano oferece atendimento nutricional gratuito à população",
+      "resumo": "Os atendimentos são realizados de segunda a sexta e podem ser agendados por WhatsApp. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-17",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7486591",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "visto": true
+    },
+    {
+      "titulo": "UFPE participa da 20ª Primavera dos Museus",
+      "resumo": "O evento é realizado pela Procult atendendo ao convite nacional do Instituto Brasileiro de Museus (Ibram). Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-17",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7485462",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/17.09.26+fotPrimaveradosMuseus.png/81b29890-6b59-4425-8a3e-446495e9e52e?t=1789670519712",
+      "visto": true
+    },
+    {
+      "titulo": "Expansão do LTC-RX reforça papel estratégico da UFPE em desenvolvimento tecnológico e inovação industrial",
+      "resumo": "O laboratório aproxima Universidade, setor produtivo e poder público, contribuindo para inovação, competitividade e desenvolvimento local e nacional. Assessoria de…",
+      "data": "2026-09-17",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7485719",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/17.09.26+fotLTC-RX.png/c12af075-b650-4e3b-a752-ca1b767d0d3f?t=1789673578345",
+      "visto": true
+    },
+    {
+      "titulo": "Empresas juniores da UFPE são destaque em ranking nacional",
+      "resumo": "A ACE Consultoria e o Citi ficaram entre as melhores empresas juniores do país e da região Nordeste. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-17",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7485451",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/17.09.26+fotEmpresasJuniores.png/5973fc13-730b-4811-ac48-17b129b44c85?t=1789673800566",
+      "visto": true
+    },
+    {
+      "titulo": "Papo Circular fala sobre rotina de estudos e opções de rolês na Universidade",
+      "resumo": "A série é uma produção da Diretoria de Comunicação (Dircom/Supercom) da UFPE. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-17",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7485408",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "visto": true
+    },
+    {
+      "titulo": "Concluintes de licenciatura da UFPE participam da PND neste domingo (20)",
+      "resumo": "Os participantes devem preencher o Questionário do Estudante, obrigatório para os inscritos no exame, até o sábado (19). Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-16",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7481914",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/16.09.26+fotPNDLicenciatura.png/54b38756-dd57-4c87-a15a-3d80a03e50bb?t=1789582426358",
+      "visto": true
+    },
+    {
+      "titulo": "Estudo da UFPE desenvolvido no âmbito do projeto IntegrAutismo é destaque no Congresso Norte-Nordeste de Terapia Ocupacional",
+      "resumo": "O trabalho recebeu menção honrosa durante o evento, que aconteceu no início deste mês, em Olinda. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-16",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7481897",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/16.09.26+fotIntegrautismo.png/a5ad6a40-c654-4f4f-a209-299df8dd98f9?t=1789589519336",
+      "visto": true
+    },
+    {
+      "titulo": "Abertas inscrições para atividades formativas do Conexões Pedagógicas 2026",
+      "resumo": "As atividades serão realizadas nos dias 1º e 2 de outubro, em formato on-line. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-15",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7480327",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/15.09.26+fotConex%C3%B5esPedag%C3%B3gicas.png/ee13abaa-b97b-4bde-8118-0654f7e37620?t=1789498972684",
+      "visto": true
+    },
+    {
+      "titulo": "VI Festival de Talentos da UFPE recebe inscrições até 21 de setembro",
+      "resumo": "Servidores, colaboradores, bolsistas e estagiários podem inscrever propostas em quatro modalidades artísticas e culturais. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-15",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7480548",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/15.09.26+fotFestivaldeTalentos.png/4bbf6fbf-0db6-47c4-9af4-00a67e078d6a?t=1789497863123",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE no Mercado acontece nos dias 22 e 23 deste mês",
+      "resumo": "O evento reunirá cerca de 30 empresas com processos seletivos e vagas abertas. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-14",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7477964",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/14.09.26+fotUFPEMercado.png/79c9717c-4803-4195-af9b-d9a32239864f?t=1789411615274",
+      "visto": true
+    },
+    {
+      "titulo": "Laboratório de Tomografia Computadorizada de Raios X inaugura expansão no dia 15 deste mês",
+      "resumo": "A expansão do LTC-RX inaugura um novo ciclo institucional, materializado na implantação do CT-Indústria. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-14",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7477953",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/14.09.26+fotLTC-RX.png/feeed94b-0031-47d0-a651-d6b3b5cb76d2?t=1789415188080",
+      "visto": true
+    },
+    {
+      "titulo": "Pesquisa da UFPE sobre Pix e arrecadação é apresentada em congressos na Europa",
+      "resumo": "O estudo mostra como a maior exposição ao Pix aumentou a formalização e a arrecadação de impostos. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-14",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7477936",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/14.09.26+fotPix.png/109d1e0b-b419-490c-9706-2761c5eab29a?t=1789411595461",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE é contemplada com R$ 19,6 milhões em chamada pública para fortalecer infraestrutura de pesquisa",
+      "resumo": "Com o resultado, a UFPE alcançou o 1° lugar entre as instituições contempladas em volume de recursos, com quatro projetos aprovados",
+      "data": "2026-09-11",
+      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7475633",
+      "fonte": "CAV/UFPE",
+      "tags": [
+        "Campus"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/11.09.26+fotPropesqi.png/f377b675-b2b6-4160-a10c-a967fee439bd?t=1789151076606",
+      "visto": true
+    },
+    {
+      "titulo": "RobôCIn conquista vitórias em novas categorias em 2026",
+      "resumo": "Este ano, o projeto passou a trabalhar com robôs humanoides. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-11",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7476259",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "visto": true
+    },
+    {
+      "titulo": "UFPE é contemplada com R$ 19,6 milhões em chamada pública para fortalecer infraestrutura de pesquisa",
+      "resumo": "Com o resultado, a UFPE alcançou o 1° lugar entre as instituições contempladas em volume de recursos, com quatro projetos aprovados. Assessoria de Comunicação Social…",
+      "data": "2026-09-11",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7475633",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/11.09.26+fotPropesqi.png/f377b675-b2b6-4160-a10c-a967fee439bd?t=1789151076606",
+      "visto": true
+    },
+    {
+      "titulo": "Pós-doutoranda da UFPE conquista primeiro lugar em concurso internacional de imagens de microscopia",
+      "resumo": "Maria Clara Muller foi premiada com imagem produzida durante pesquisa sobre nanopartículas de prata para o tratamento da cárie. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-11",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7475616",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/11.09.26+fotMicroscopia.png/c695a170-56b1-4d3d-a5db-c009c6fd17a6?t=1789151064107",
+      "visto": true
+    },
+    {
+      "titulo": "Centro Acadêmico do Sertão completa um ano de existência",
+      "resumo": "O CAS oferece cinco cursos de graduação. Em breve, o curso de Medicina também passará a integrar a oferta acadêmica do centro. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-10",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7472508",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/10.09.26+fotCAS.png/01c24ab1-24ad-48e1-9156-e11828f7e4a8?t=1789071186945",
+      "visto": true
+    },
+    {
+      "titulo": "Moacyr Araújo é reconduzido à coordenação da Câmara de Assessoramento Científico do Comitê Interministerial sobre Mudança do Clima",
+      "resumo": "A instância é responsável por aproximar a produção científica das decisões estratégicas da política climática brasileira. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-10",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7472497",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/10.09.26+fotMoacyr.png/fa2cb46f-4343-4f4d-95da-314fc70c69b5?t=1789071210376",
+      "visto": true
+    },
+    {
+      "titulo": "Curso de Engenharia Naval da UFPE comemora 15 anos",
+      "resumo": "O evento ocorre nesta sexta (11), a partir das 13h, na Sala de Reuniões do Departamento de Engenharia Mecânica. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-09-10",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7472480",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/10.09.26+fotEngenhariaNaval.png/a5ff7aa5-f045-49e1-a68a-b59bbcaf19b8?t=1789071160229",
+      "visto": true
+    },
+    {
+      "titulo": "Expo UFPE 2026 recebe inscrições para visitas de escolas",
+      "resumo": "O evento ocorre no dia 8 de outubro, na Concha Acústica e no Hall do Centro de Convenções da UFPE",
+      "data": "2026-09-08",
+      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7468272",
+      "fonte": "CAV/UFPE",
+      "tags": [
+        "Campus"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7460767/08.09.26+fotExpoUFPE.png/579a769c-9e2c-4d41-9ce3-1df8ca002871?t=1788892663948",
       "visto": true
     },
     {
@@ -51,29 +288,6 @@
       "visto": true
     },
     {
-      "titulo": "Museu de Ciências Exatas da UFPE busca desmistificar a ciência e torná-la mais acessível",
-      "resumo": "O museu fica aberto ao público e os agendamentos das visitas podem ser feitos pelo Instagram. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-09-03",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7463963",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "visto": true
-    },
-    {
-      "titulo": "Docente da UFPE publica livro sobre anorexia nervosa",
-      "resumo": "Michelle Melgarejo reflete sobre a doença a partir da própria experiência e de evidências científicas, abordando o transtorno sob diferentes perspectivas. Assessoria…",
-      "data": "2026-09-03",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7463839",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/03.09.26+Miniatura+livro+anorexia+.png/450b6cc6-2273-4b0d-9bf6-fd2fd15f0a96?t=1788457776392",
-      "visto": true
-    },
-    {
       "titulo": "Bolsistas apoiadores de Acessibilidade do CAV apresentam serviços aos calouros",
       "resumo": "Atividade integrou as ações de acolhimento aos novos estudantes do Centro Acadêmico de Vitória",
       "data": "2026-09-02",
@@ -86,42 +300,6 @@
       "visto": true
     },
     {
-      "titulo": "UFPE realiza expedição pela Caatinga para aproximar ciência e saberes locais",
-      "resumo": "Equipe da UFPE e da UFRPE percorreu mais de 6 mil quilômetros, visitou sete Unidades de Conservação e realizou atividades com cerca de 700 pessoas em mais de 20…",
-      "data": "2026-09-02",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7462351",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/02.09.26+Miniatura+expedi%C3%A7%C3%A3o+pela+Caatinga+.png/34c8a9da-e0cc-42db-844d-e845fd246db7?t=1788373225671",
-      "visto": true
-    },
-    {
-      "titulo": "Prograd promove Conexões Pedagógicas para a comunidade acadêmica",
-      "resumo": "Eventos serão realizados amanhã (3), no Campus Recife, e nos dias 16, 29 e 30, nos demais campi da UFPE. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-09-02",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7462337",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/02.09.26+Miniatura+conex%C3%B5es+pedag%C3%B3gicas+.png/dcf3ab1e-7d37-4e9a-9f50-a1462688c324?t=1788373748754",
-      "visto": true
-    },
-    {
-      "titulo": "Progepe e STI disponibilizam Portal de Consulta Pública de Memoriais RSC-PCCTAE",
-      "resumo": "Iniciativa objetiva garantir transparência e permite acompanhamento da evolução dos trabalhos da comissão. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-09-02",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7462317",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/02.09.26+Miniatura+rsc+transpar%C3%AAncia+.png/6022aab6-2610-43a5-aefb-39cbcfb71db3?t=1788376022559",
-      "visto": true
-    },
-    {
       "titulo": "Bolsistas apoiadores da USA/CAV apresentam serviços de acessibilidade aos calouros",
       "resumo": "01/09/2026 17:46 A Unidade Setorial de Acessibilidade (USA) do Centro Acadêmico de Vitória (CAV/UFPE) realizou uma atividade de apresentação...",
       "data": "2026-09-01",
@@ -131,149 +309,6 @@
         "Campus"
       ],
       "imagem": "https://www.ufpe.br/documents/1312898/7461128/Bolsistas+Apoiadores+apresentando+a+USA-CAV/24d7ff36-0107-4589-98f5-b28cb6f1ff91?t=1788294646613",
-      "visto": true
-    },
-    {
-      "titulo": "Lançada Rede Coonexa - Tecnologias Convergentes para a Sustentabilidade, Inclusão e Cooperação Global",
-      "resumo": "Além da UFPE, integram a Rede Coonexa a UFJF, o IFG, a UFSM, a Ufal e o Cefet/RJ. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-09-01",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7460684",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/01.09.26+Miniatura+coonexa.png/fcc61190-e9a9-41c6-bea9-f286e84cb389?t=1788285723085",
-      "visto": true
-    },
-    {
-      "titulo": "Procult realiza primeiro encontro com Agentes de Conexões Culturais da UFPE",
-      "resumo": "A iniciativa teve como objetivo apresentar as possibilidades de participação e colaboração na área cultural e fortalecer o diálogo entre a pró-reitoria e as unidades…",
-      "data": "2026-09-01",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7460671",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/01.09.26+Miniatura+Agentes+de+Conex%C3%B5es+Culturais.png/c92eae53-e038-43c1-a5d7-34b74902796a?t=1788285770009",
-      "visto": true
-    },
-    {
-      "titulo": "Vice-reitor Moacyr Araújo é indicado como Membro Titular da Sigma Xi, uma das mais tradicionais sociedades científicas do mundo",
-      "resumo": "A indicação de seu nome ocorreu em reconhecimento às suas realizações acadêmicas e científicas para o avanço do conhecimento na área de Oceanografia e Mudanças do…",
-      "data": "2026-09-01",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7460658",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7460767/01.09.26+Miniatura+Sigma+Xi+.png/8a7346ee-b8af-4bf8-a306-6e465aed4270?t=1788285823745",
-      "visto": true
-    },
-    {
-      "titulo": "Equipe Navícula Boat Design da UFPE obtém o 2º lugar na Colocação Geral do Desafio Universitário de NautiDesign (Duna) 2026",
-      "resumo": "O evento foi realizado de 19 a 22 de agosto, na cidade de Joinville (SC). Assessoria de Comunicação Social da UFPE",
-      "data": "2026-08-31",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7457937",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/31.08.26+Miniatura+nav%C3%ADcula+.png/a68d355c-bc09-4be0-bcd7-222a1e0d237c?t=1788202144937",
-      "visto": true
-    },
-    {
-      "titulo": "34ª Sessão Ordinária da Academia Brasileira de Ciências será realizada na UFPE",
-      "resumo": "Inscrições são gratuitas e já estão abertas por meio de formulário on-line. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-08-31",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7457896",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/31.08.26+Miniatura+academia+brasileira+de+ci%C3%AAncias+.png/8ef899ec-5a13-4568-94a6-0ece0f8b6ff3?t=1788202392057",
-      "visto": true
-    },
-    {
-      "titulo": "Núcleo da Pessoa Idosa da UFPE promove aprendizado, arte, saúde e qualidade de vida",
-      "resumo": "Confira a reportagem e conheça esse trabalho que possibilita novas oportunidades para a terceira idade. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-08-28",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7455546",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "visto": true
-    },
-    {
-      "titulo": "UFPE sedia na próxima segunda (31) o lançamento da Rede Coonexa para ampliar a internacionalização da pós-graduação",
-      "resumo": "A Universidade se associa a outras instituições na iniciativa: UFJF, IFG, UFSM, Ufal e Cefet-RJ. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-08-28",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7454449",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/28.08.26_Miniatura+Rede+Coonexa+%281%29.png/5eb3cdae-9fab-40ae-9d16-315c728d29cd?t=1787942633464",
-      "visto": true
-    },
-    {
-      "titulo": "CEO de startup da Incubadora do Parque.TeC/UFPE é destaque no Prêmio Sebrae Mulher de Negócios 2026",
-      "resumo": "Geicianfran Roque, à frente da Aicury, conquistou o primeiro lugar na categoria Ciência e Tecnologia da etapa estadual da premiação. Assessoria de Comunicação Social…",
-      "data": "2026-08-28",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7454436",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/28.08.26_Miniatura+Sebrae+Mulher.png/0b7350f4-5131-4b3f-81af-7548cfd8ac84?t=1787935452211",
-      "visto": true
-    },
-    {
-      "titulo": "Ministro da Educação, Leonardo Barchini, visita obras e laboratórios da UFPE",
-      "resumo": "Recepcionado pelo reitor Alfredo Gomes, ele verificou o andamento das obras de reforma no Complexo de Convenções e do HC e visitou laboratórios no I-Litpeg. Assessoria…",
-      "data": "2026-08-27",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7452344",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/27.08.26+Miniatura+_1visita+ministro+.png/ba296ace-a00e-40b1-9524-66679c2bf894?t=1787854724872",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE abre 100 vagas para cursos de Engenharia no Centro Acadêmico do Sertão, em Sertânia",
-      "resumo": "As inscrições estão abertas e podem ser feitas até 15 de setembro, às 23h59. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-08-27",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7452303",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/27.08.26+Miniatura+engenharia+sert%C3%A2nia+.png/85d7be03-f8e1-404f-929f-db93a5da26cb?t=1787852228545",
-      "visto": true
-    },
-    {
-      "titulo": "Membrana fotocatalítica utiliza energia luminosa para tratamento de efluentes têxteis",
-      "resumo": "Solução sustentável reduz o consumo de água e os impactos ambientais causados pelo descarte na indústria têxtil. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-08-26",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7443824",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40623/7382946/26.08.2026+Membrana+fotocatal%C3%ADtica+-+Bolpesq+Miniatura.png/b575b81b-0461-47d3-8220-22cf8a5cb750?t=1787576816226",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE divulga nota sobre a política de reserva de vagas em concursos para a carreira docente",
-      "resumo": "Na nota, a Universidade detalha a legislação que embasa as decisões administrativas sobre o assunto. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-08-25",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7447292",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/25.08.26+Miniatura+nota+docentes+.png/948b57cc-7cc7-4132-a1f0-fba88bf5cf35?t=1787681616500",
       "visto": true
     },
     {
@@ -442,42 +477,6 @@
         "Campus"
       ],
       "imagem": "https://www.ufpe.br/documents/40615/7349665/21.07.26+fotMatr%C3%ADculas.png/e8f4bb62-997c-4333-853c-66433ff75018?t=1784660783533",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE realiza concursos para professor do magistério superior com 58 vagas",
-      "resumo": "As vagas são destinadas aos campi localizados no Recife, Vitória de Santo Antão, Caruaru e Sertânia",
-      "data": "2026-07-15",
-      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7375375",
-      "fonte": "CAV/UFPE",
-      "tags": [
-        "Campus"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7349665/15.07.26+fotConcursosUFPE+%28Vale+Este%29.png/f93c220a-fb60-459f-8153-adcec214dfdf?t=1784150625420",
-      "visto": true
-    },
-    {
-      "titulo": "Progepe promove a jornada UFPE contra o assédio e a discriminação nas unidades acadêmicas e administrativas",
-      "resumo": "Os encontros tiveram início em maio",
-      "data": "2026-07-10",
-      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7367282",
-      "fonte": "CAV/UFPE",
-      "tags": [
-        "Campus"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7349665/10.07.26+fotProgepeAss%C3%A9dio.png/899c1025-0a51-4559-a465-4fcdc284c45a?t=1783943913168",
-      "visto": true
-    },
-    {
-      "titulo": "Universidade é contemplada no edital Proinfra da Finep",
-      "resumo": "O valor total aprovado para a UFPE é de aproximadamente R$ 20 milhões",
-      "data": "2026-07-09",
-      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7365875",
-      "fonte": "CAV/UFPE",
-      "tags": [
-        "Campus"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7349665/09.07.26+fotProinfra.png/4b863054-2cd0-4c0c-9c5a-3b5459a5653e?t=1783621131497",
       "visto": true
     },
     {
