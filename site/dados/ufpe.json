@@ -1,7 +1,103 @@
 {
   "_leia": "Arquivo GERADO por ferramentas/atualizar-noticias.js. Não edite à mão — a próxima execução sobrescreve tudo. As notícias do laboratório ficam em lihof.json.",
-  "atualizado": "2026-10-13T13:59:09.196Z",
+  "atualizado": "2026-10-15T11:13:50.648Z",
   "itens": [
+    {
+      "titulo": "Mês do Servidor 2026 reúne apresentações artísticas, exposição, ações de saúde e oficinas na UFPE",
+      "resumo": "Programação gratuita segue até o fim de outubro, com atividades nos campi e espaços da Universidade",
+      "data": "2026-10-14",
+      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7527773",
+      "fonte": "CAV/UFPE",
+      "tags": [
+        "Campus"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotM%C3%AAsdoServidor.png/526d08db-1aea-45d5-a20b-26352f9e8522?t=1792006625829",
+      "visto": true
+    },
+    {
+      "titulo": "Mês do Servidor 2026 reúne apresentações artísticas, exposição, ações de saúde e oficinas na UFPE",
+      "resumo": "Programação gratuita segue até o fim de outubro, com atividades nos campi e espaços da Universidade. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-14",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527773",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotM%C3%AAsdoServidor.png/526d08db-1aea-45d5-a20b-26352f9e8522?t=1792006625829",
+      "visto": true
+    },
+    {
+      "titulo": "CAS sedia primeira edição da Expo UFPE",
+      "resumo": "Está é a primeira edição da Expo UFPE do município de Sertânia. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-14",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527756",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotExpoCAS.png/ad275b12-1ac6-4089-a5a9-2c782aef17c3?t=1792006620039",
+      "visto": true
+    },
+    {
+      "titulo": "Universidade leva a exposição Cartografias do desvio à Feira de Arte Contemporânea de Pernambuco",
+      "resumo": "O evento reúne 75 expositores, incluindo 55 galerias de todas as regiões do Brasil, a exemplo da Galeria Capibaribe da UFPE. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-14",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527739",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotCartografias.png/4652063a-bc2f-4932-a5c7-e0597ce8dd02?t=1792006616802",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE orienta comunidade acadêmica sobre mensagens suspeitas via WhatsApp",
+      "resumo": "A pessoa deve desconfiar imediatamente se receber mensagens ou ligações suspeitas. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-14",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527722",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotSeguran%C3%A7aWhats.png/1087fda0-48e2-4023-a0fc-becd8694efd5?t=1792006645091",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE aprova a criação de cinco novos cursos de graduação",
+      "resumo": "As novas formações abrangem as áreas de saúde, educação, tecnologia e ciências exatas, e têm previsão de início a partir de 2027",
+      "data": "2026-10-13",
+      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7526233",
+      "fonte": "CAV/UFPE",
+      "tags": [
+        "Campus"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/13.10.26+fotNovosCursos.png/4789e7ad-8f9a-40e6-9921-ec3305374078?t=1791917174224",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE aprova a criação de cinco novos cursos de graduação",
+      "resumo": "As novas formações abrangem as áreas de saúde, educação, tecnologia e ciências exatas, e têm previsão de início a partir de 2027. Assessoria de Comunicação Social da…",
+      "data": "2026-10-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7526233",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/13.10.26+fotNovosCursos.png/4789e7ad-8f9a-40e6-9921-ec3305374078?t=1791917174224",
+      "visto": true
+    },
+    {
+      "titulo": "Conexões Pedagógicas 2026 encerra programação com palestras no Centro Acadêmico do Sertão",
+      "resumo": "O encontro ocorre nesta terça (13), de forma presencial. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7526216",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/13.10.26+fotConex%C3%B5es.png/9ab7b510-aa2a-475b-b09c-68d331f470d3?t=1791917157972",
+      "visto": true
+    },
     {
       "titulo": "UFPE agradece mensagens de apoio após incêndio em prédio no Campus Recife",
       "resumo": "Ocorrido no ultimo dia 7, incêndio destruiu laboratórios nas áreas de fármacos, genética e informática. Assessoria de Comunicação Social da UFPE",
@@ -204,78 +300,6 @@
       "visto": true
     },
     {
-      "titulo": "Professora da UFPE integra conselho consultivo do patrimônio cultural do Iphan",
-      "resumo": "Natália Miranda foi responsável por elaborar e apresentar os pareceres que subsidiaram o tombamento da Casa da Cultura e da Estação Central do Recife. Assessoria de…",
-      "data": "2026-10-06",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7516426",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/06.10.26+fotIphan.png/afc19582-e69d-4b9f-9be9-7f81e2f195a4?t=1791312175130",
-      "visto": true
-    },
-    {
-      "titulo": "Colégio de Aplicação da UFPE publica edital de processo seletivo para ingresso no 6º ano em 2027",
-      "resumo": "A seleção, que ocorrerá exclusivamente por sorteio público eletrônico, vai oferecer 50 vagas. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-05",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7514369",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/05.10.26+fotCAP.png/9127aeed-6c63-4fca-b72a-9ea8fa75e3d4?t=1791228462676",
-      "visto": true
-    },
-    {
-      "titulo": "Assinada ordem de serviço para obras de implantação da sede do Parque.TeC UFPE",
-      "resumo": "A instalação da sede representa um importante passo no crescimento e na consolidação da infraestrutura de inovação e empreendedorismo da Universidade. Assessoria de…",
-      "data": "2026-10-05",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7514380",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/05.10.26+fotParquetec.png/e4789f3e-eec2-412b-ae93-aa95d18cb143?t=1791228647253",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE promove programação especial para celebrar o Mês da Pessoa Idosa",
-      "resumo": "As atividades são abertas ao público e incluem palestras, apresentações culturais, oficinas, atendimento jurídico e ações voltadas à saúde. Assessoria de Comunicação…",
-      "data": "2026-10-05",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7514358",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/05.10.26+fotPessoaIdosa.png/af5b93ff-3004-45ec-b1e5-de588f4e15ee?t=1791228483094",
-      "visto": true
-    },
-    {
-      "titulo": "Rádio Paulo Freire lança chamada pública para selecionar programas e podcasts em caráter voluntário para o ano 2027",
-      "resumo": "Os interessados em enviar propostas podem fazer as inscrições até o dia 6 de novembro. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-05",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7514347",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/05.10.26+fotR%C3%A1dioPauloFreire.png/cf5ca5fe-49ca-4e0d-aa8a-fb31a0bd0613?t=1791228493897",
-      "visto": true
-    },
-    {
-      "titulo": "TVU Saberes estreia nesta terça (6) com debate sobre impactos das mudanças climáticas",
-      "resumo": "O programa de estreria conversa com o vice-reitor da UFPE, o professor e oceanógrafo Moacyr Araújo. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-05",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7514472",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/05.10.26+fotTVUSaberes.png/53a39691-4606-46db-93e7-eccb6af03fc6?t=1791228658921",
-      "visto": true
-    },
-    {
       "titulo": "Pesquisadores da UFPE e da França lançam projeto internacional sobre saúde cardiometabólica e vitaminas do complexo B",
       "resumo": "O lançamento do projeto em Pernambuco será feito durante simpósio internacional no CAV",
       "data": "2026-10-02",
@@ -453,30 +477,6 @@
         "Campus"
       ],
       "imagem": "https://www.ufpe.br/documents/40615/7402752/10.08.26+fotAulaMagnaCAV.png/4e8bec8b-0c1f-4c2f-9294-e7ac8201dc01?t=1786393787334",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE inicia semestre letivo 2026.2 da graduação na próxima segunda (10) e recebe mais de 3 mil ingressantes nas Aulas Magnas",
-      "resumo": "Serão realizadas Aulas Magnas em Vitória (10), Recife (11), Caruaru (12) e Sertânia (20)",
-      "data": "2026-08-07",
-      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7413153",
-      "fonte": "CAV/UFPE",
-      "tags": [
-        "Campus"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/07.08.26+fotAulasMagnas.png/daaf1519-682a-456a-8637-4cdfb9153230?t=1786132727982",
-      "visto": true
-    },
-    {
-      "titulo": "Estudo recruta voluntários para pesquisa sobre marcadores precoces de hipertensão e diabetes",
-      "resumo": "Os participantes terão acesso a bioimpedância, eletrocardiograma e exames bioquímicos",
-      "data": "2026-08-07",
-      "link": "https://www.ufpe.br/cav/-/asset_publisher/7UAqmlBTTbfv/content/id/7413068",
-      "fonte": "CAV/UFPE",
-      "tags": [
-        "Campus"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7402752/07.08.26+fotTripletes.png/7b37a777-2cf4-4f3b-8184-32037a05f69b?t=1786131662857",
       "visto": true
     },
     {
