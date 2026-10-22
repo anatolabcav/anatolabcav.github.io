@@ -1,7 +1,138 @@
 {
   "_leia": "Arquivo GERADO por ferramentas/atualizar-noticias.js. Não edite à mão — a próxima execução sobrescreve tudo. As notícias do laboratório ficam em lihof.json.",
-  "atualizado": "2026-10-19T12:46:40.114Z",
+  "atualizado": "2026-10-22T11:33:35.823Z",
   "itens": [
+    {
+      "titulo": "UFPE homenageia servidoras e servidores que completam décadas de trabalho na instituição",
+      "resumo": "A programação inclui apresentações musicais, feira de manualidades e ações de cuidado com a saúde. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-21",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7540597",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/21.10.26+fotHomenagemServidores.png/228f0370-7f81-4fa4-801e-f10c41389d6e?t=1792608863594",
+      "visto": true
+    },
+    {
+      "titulo": "Universidade reintegra professores aprovados por meio de cotas",
+      "resumo": "A reversão se deu por meio de esforço da Procuradoria Federal da UFPE e da Procuradoria Regional Federal da 5ª Região. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-21",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7540574",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/21.10.26+fotProfessoresCotas.png/4980830b-1970-4676-b762-410056ba59c7?t=1792608890208",
+      "visto": true
+    },
+    {
+      "titulo": "Galeria Capibaribe marca presença na 5ª edição da Art.PE",
+      "resumo": "O evento foi realizado de 14 a 18 de outubro, no Recife Expo Center. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-21",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7540563",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/21.10.26+fotARTE.PE.png/34e163d5-653a-440c-b1bf-66429484092c?t=1792608858563",
+      "visto": true
+    },
+    {
+      "titulo": "VI Vitrine da Inovação da UFPE tem inscrições abertas",
+      "resumo": "O evento vai trazer uma programação voltada para a promoção de conexões e oportunidades de negócios. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-21",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7540512",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/21.10.26+fotVitrinedaInova%C3%A7%C3%A3o.png/51170b8b-a5a3-4b5d-b406-648b26fa08ca?t=1792608903611",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE se reúne com estudantes e pesquisadores para avaliar impactos e discutir planos após incêndio",
+      "resumo": "Pesquisadores e estudantes relataram suas preocupações com a perda de materiais e equipamentos e a continuidade dos trabalhos. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-20",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7537940",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "visto": true
+    },
+    {
+      "titulo": "UFPE promove ações de apoio a laboratórios e startups impactados por incêndio de prédio multiuso no Campus Recife",
+      "resumo": "O incêndio destruiu espaços de pesquisa voltados a áreas como inovação e engenharia biomédica. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-20",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7537915",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/20.10.26+fotApoioLaborat%C3%B3riosInc%C3%AAndio.png/cc9f06c7-dd69-4655-9325-07cd52b407f5?t=1792526269813",
+      "visto": true
+    },
+    {
+      "titulo": "Cientistas da UFPE estão entre os mais influentes do mundo em levantamento de pesquisadores da Universidade de Stanford",
+      "resumo": "Os 25 pesquisadores aparecem nas listas de impacto ao longo da carreira e de impacto no último ano. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-20",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7537904",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/20.10.26+fotCientistaInfluentes.png/dd21e4bc-e574-4b99-99eb-018027067bef?t=1792526349859",
+      "visto": true
+    },
+    {
+      "titulo": "Parque.TeC UFPE lança programa para ampliar internacionalização de startups",
+      "resumo": "O programa busca ampliar as conexões de startups vinculadas ao Parque com parceiros, investidores e ecossistemas de inovação internacionais. Assessoria de Comunicação…",
+      "data": "2026-10-19",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7535402",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/19.10.26+fotParque.TeC.png/d97453f8-fb6f-4ef8-b681-31b7bbab7eb4?t=1792437781240",
+      "visto": true
+    },
+    {
+      "titulo": "Portal da UFPE terá nova plataforma em 2026",
+      "resumo": "O novo portal estará disponível para a sociedade no dia 11 de novembro. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-19",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7535303",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/19.10.26+fotNovoPortal.png/91961b5f-5252-4849-8d8c-e9122192f4be?t=1792442936384",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE orienta comunidade acadêmica sobre uso consciente de energia",
+      "resumo": "A iniciativa busca reduzir o impacto ambiental no dia a dia acadêmico ou profissional. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-19",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7535373",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/19.10.26+fotEconomiaEnergia.png/4aa60956-df28-4864-bc78-5f1aee95640d?t=1792442817466",
+      "visto": true
+    },
+    {
+      "titulo": "Clube de Leitura Entre Linhas terá encontro on-line sobre a obra Quarto de Despejo",
+      "resumo": "Qualquer pessoa maior de 18 anos pode participar do encontro. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-19",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7535351",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/19.10.26+fotClubeEntrelinhas.png/a36c6d57-4c78-43a0-a7ee-c0efa3452313?t=1792437774190",
+      "visto": true
+    },
     {
       "titulo": "UFPE participa de missão no Canadá sobre tecnologias convergentes para sustentabilidade, inclusão e cooperação global",
       "resumo": "As reuniões destacaram as possibilidades de cooperação internacional em áreas temáticas estratégicas. Assessoria de Comunicação Social da UFPE",
@@ -133,54 +264,6 @@
       "visto": true
     },
     {
-      "titulo": "Mês do Servidor 2026 reúne apresentações artísticas, exposição, ações de saúde e oficinas na UFPE",
-      "resumo": "Programação gratuita segue até o fim de outubro, com atividades nos campi e espaços da Universidade. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-14",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527773",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotM%C3%AAsdoServidor.png/526d08db-1aea-45d5-a20b-26352f9e8522?t=1792006625829",
-      "visto": true
-    },
-    {
-      "titulo": "CAS sedia primeira edição da Expo UFPE",
-      "resumo": "Está é a primeira edição da Expo UFPE do município de Sertânia. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-14",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527756",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotExpoCAS.png/ad275b12-1ac6-4089-a5a9-2c782aef17c3?t=1792006620039",
-      "visto": true
-    },
-    {
-      "titulo": "Universidade leva a exposição Cartografias do desvio à Feira de Arte Contemporânea de Pernambuco",
-      "resumo": "O evento reúne 75 expositores, incluindo 55 galerias de todas as regiões do Brasil, a exemplo da Galeria Capibaribe da UFPE. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-14",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527739",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotCartografias.png/4652063a-bc2f-4932-a5c7-e0597ce8dd02?t=1792006616802",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE orienta comunidade acadêmica sobre mensagens suspeitas via WhatsApp",
-      "resumo": "A pessoa deve desconfiar imediatamente se receber mensagens ou ligações suspeitas. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-14",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7527722",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/14.10.26+fotSeguran%C3%A7aWhats.png/1087fda0-48e2-4023-a0fc-becd8694efd5?t=1792006645091",
-      "visto": true
-    },
-    {
       "titulo": "UFPE aprova a criação de cinco novos cursos de graduação",
       "resumo": "As novas formações abrangem as áreas de saúde, educação, tecnologia e ciências exatas, e têm previsão de início a partir de 2027",
       "data": "2026-10-13",
@@ -190,41 +273,6 @@
         "Campus"
       ],
       "imagem": "https://www.ufpe.br/documents/40615/7510927/13.10.26+fotNovosCursos.png/4789e7ad-8f9a-40e6-9921-ec3305374078?t=1791917174224",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE aprova a criação de cinco novos cursos de graduação",
-      "resumo": "As novas formações abrangem as áreas de saúde, educação, tecnologia e ciências exatas, e têm previsão de início a partir de 2027. Assessoria de Comunicação Social da…",
-      "data": "2026-10-13",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7526233",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/13.10.26+fotNovosCursos.png/4789e7ad-8f9a-40e6-9921-ec3305374078?t=1791917174224",
-      "visto": true
-    },
-    {
-      "titulo": "Conexões Pedagógicas 2026 encerra programação com palestras no Centro Acadêmico do Sertão",
-      "resumo": "O encontro ocorre nesta terça (13), de forma presencial. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-13",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7526216",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/13.10.26+fotConex%C3%B5es.png/9ab7b510-aa2a-475b-b09c-68d331f470d3?t=1791917157972",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE agradece mensagens de apoio após incêndio em prédio no Campus Recife",
-      "resumo": "Ocorrido no ultimo dia 7, incêndio destruiu laboratórios nas áreas de fármacos, genética e informática. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-11",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7524929",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
       "visto": true
     },
     {
@@ -249,53 +297,6 @@
         "Campus"
       ],
       "imagem": "https://www.ufpe.br/documents/40691/7522501/Imagem1.png/16f791d6-5da3-4b23-8425-da58ab228110?t=1791557971882",
-      "visto": true
-    },
-    {
-      "titulo": "Conheça a ciência por trás da segurança dos brinquedos",
-      "resumo": "O LaCA²I realiza testes que verificam se os brinquedos resistem às situações do dia a dia e oferecem mais segurança para os pequenos. Assessoria de Comunicação Social…",
-      "data": "2026-10-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7523511",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "visto": true
-    },
-    {
-      "titulo": "Ministério da Ciência, Tecnologia e Inovação investirá R$ 40 milhões para reestruturar laboratórios atingidos por incêndio na UFPE",
-      "resumo": "Ação emergencial do MCTI se junta às cinco medidas anunciadas pelo MEC para continuidade das pesquisas. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7523748",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/09.10.26+fotMctiInc%C3%AAndio.png/b548af5e-f954-4616-b80b-44051b04e495?t=1791578123921",
-      "visto": true
-    },
-    {
-      "titulo": "Expo UFPE 2026 recebe mais de 30 mil visitantes no Campus Recife",
-      "resumo": "O evento tem como objetivo ajudar estudantes do Ensino Médio a escolherem seu caminho na vida universitária. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7522125",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/09.10.26+fotExpoUFPE.png/4adf2140-6c98-46c8-9fdc-68c258005737?t=1791572223140",
-      "visto": true
-    },
-    {
-      "titulo": "Ministério da Educação destinará recursos para construção de novo prédio após incêndio na UFPE, entre outras medidas",
-      "resumo": "Aquisição de equipamentos e apoio para pesquisadores concluírem estudos em outras instituições também estão entre as medidas anunciadas. Assessoria de Comunicação…",
-      "data": "2026-10-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7521757",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/08.10.26+fotMinistroNupit.png/036079ad-4bf1-45a1-a862-73604fc6a680?t=1791547674078",
       "visto": true
     },
     {
