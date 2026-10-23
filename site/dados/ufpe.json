@@ -1,7 +1,54 @@
 {
   "_leia": "Arquivo GERADO por ferramentas/atualizar-noticias.js. Não edite à mão — a próxima execução sobrescreve tudo. As notícias do laboratório ficam em lihof.json.",
-  "atualizado": "2026-10-22T11:33:35.823Z",
+  "atualizado": "2026-10-23T11:22:46.823Z",
   "itens": [
+    {
+      "titulo": "UFPE lança novo portal institucional",
+      "resumo": "Haverá capacitação para os conteudistas, de 27 de outubro a 3 de novembro, mediante inscrição via formulário on-line. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-22",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7542280",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/22.10.26+fotNovoPortal+%28Vale+Este%29.png/e915b7a5-a3ea-4cb3-8767-5527e71c089c?t=1792696279295",
+      "visto": true
+    },
+    {
+      "titulo": "Trilha Interprofissional do Centro de Ciências da Saúde reúne 275 estudantes de nove cursos da UFPE",
+      "resumo": "A iniciativa busca promover a aprendizagem colaborativa entre estudantes dos nove cursos de graduação do CCS. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-22",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7542263",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/22.10.26+fotTrilhaInterprofissional.png/c63d29af-af24-4ef1-a875-3cb5abfdac64?t=1792693552987",
+      "visto": true
+    },
+    {
+      "titulo": "Ceerma recebe Petrobras e SLB em workshop sobre aplicação da ferramenta DRUM em equipamento de completação de poços",
+      "resumo": "Os profissionais trabalharam juntos ao longo de três dias. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-22",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7542246",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7510927/22.10.26+fotCeerma.png/830b69c7-f0e2-4af8-bbcf-26f02c7d9be3?t=1792693521701",
+      "visto": true
+    },
+    {
+      "titulo": "Papo Circular traz as escolhas dos estudantes da UFPE sobre o dia a dia no campus",
+      "resumo": "Apresentado por Vitória Uani, o Papo Circular traz conversas descontraídas com os passageiros do ônibus circular da UFPE. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-10-22",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7542217",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "visto": true
+    },
     {
       "titulo": "UFPE homenageia servidoras e servidores que completam décadas de trabalho na instituição",
       "resumo": "A programação inclui apresentações musicais, feira de manualidades e ações de cuidado com a saúde. Assessoria de Comunicação Social da UFPE",
@@ -203,52 +250,6 @@
         "Campus"
       ],
       "imagem": "https://www.ufpe.br/documents/40615/7510927/15.10.26+fotConex%C3%B5esPedag%C3%B3gicas.png/700161d8-491c-42a4-a7b7-cb792a34139e?t=1792098421569",
-      "visto": true
-    },
-    {
-      "titulo": "Projeto Navícula Boat transforma ideias em embarcações",
-      "resumo": "Ao longo de sua trajetória, o projeto conquistou diversos prêmios em competições nacionais e internacionais. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-15",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7530671",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "visto": true
-    },
-    {
-      "titulo": "Galeria Capibaribe participa da ART.PE 2026 com obras de 44 estudantes, professores e técnicos",
-      "resumo": "Espaço da UFPE estreou na feira de arte contemporânea de Pernambuco em 2025. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-15",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7530035",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/15.10.26+fotART.PE.png/6d978e60-0b5a-47f2-954f-fa43da71659d?t=1792098412710",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE divulga medidas preventivas após ocorrências de incêndios em suas instalações",
-      "resumo": "A Universidade está adotando medidas preventivas e corretivas. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-15",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7530012",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7510927/15.10.26+fotA%C3%A7%C3%B5esInc%C3%AAndio.png/efb4c7d7-4a4c-4bbb-8593-1394c935f698?t=1792098409369",
-      "visto": true
-    },
-    {
-      "titulo": "Tour UFPE visita o Centro de Informática (CIn)",
-      "resumo": "O CIn é um dos mais renomados centros de ensino e pesquisa em computação do Brasil e da América Latina. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-10-15",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7529990",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
       "visto": true
     },
     {
