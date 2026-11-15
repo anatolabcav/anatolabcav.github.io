@@ -1,7 +1,102 @@
 {
   "_leia": "Arquivo GERADO por ferramentas/atualizar-noticias.js. Não edite à mão — a próxima execução sobrescreve tudo. As notícias do laboratório ficam em lihof.json.",
-  "atualizado": "2026-11-13T14:23:58.938Z",
+  "atualizado": "2026-11-15T13:47:00.476Z",
   "itens": [
+    {
+      "titulo": "Projeto Reginas oferece educação financeira e gestão de negócios a mulheres empreendedoras",
+      "resumo": "Por meio de oficinas, treinamentos e atividades formativas, o projeto proporciona conhecimentos essenciais para a gestão e o crescimento de negócios. Assessoria de…",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570779",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "visto": true
+    },
+    {
+      "titulo": "UFPE encerra programação do Mês do Servidor com palestra sobre previdência e oficina de saúde mental",
+      "resumo": "As atividades concluem o ciclo de ações da Progepe com foco em planejamento do futuro e relações saudáveis no ambiente de trabalho. Assessoria de Comunicação Social da…",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570205",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7553948/13.11.26+fotM%C3%AAsServidor.png/c0695d9e-9a21-4152-87ec-9e54b9909f27?t=1794594608976",
+      "visto": true
+    },
+    {
+      "titulo": "Nota de Solidariedade à Universidade Regional do Cariri (Urca)",
+      "resumo": "A UFPE e a Urca mantêm uma sólida e frutífera parceria acadêmica e científica há décadas. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570024",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7553948/13.11.26+fotSolidariedadeUrca.png/c9aeb07e-01f1-4ca7-bddd-d86e1748868d?t=1794599122615",
+      "visto": true
+    },
+    {
+      "titulo": "Professores da UFPE analisam resultados das eleições de 2026 e alegações de fraude",
+      "resumo": "Estudo utiliza método estatístico para verificar a confiabilidade dos resultados eleitorais e não encontra sinais de manipulação nos dados analisados. Assessoria de…",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570194",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7553948/13.11.26+fotElei%C3%A7%C3%B5esFraude.png/9a7e0001-3597-4da2-929b-12fe1b513a3f?t=1794599153137",
+      "visto": true
+    },
+    {
+      "titulo": "Docente da UFPE leva cinema do Agreste a mostra e colóquio realizados em Paris",
+      "resumo": "Programação inclui exibição de filmes realizados por estudantes e egressos do CAA e lançamento de livro. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570172",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7553948/13.11.26+fotCinemaCAA.png/3edd1852-291c-42e0-ae39-c5073557e306?t=1794599138498",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE e pesquisadores do Reino Unido promovem a Pernambuco School on Neutron Scattering",
+      "resumo": "Este será o primeiro evento de formação científica dedicado à ciência de nêutrons na região Nordeste. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570183",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7553948/13.11.26+fotPernambucoSchool.png/7b1d4c2f-f687-4668-8efe-ba14c65d0257?t=1794599178226",
+      "visto": true
+    },
+    {
+      "titulo": "HC-UFPE promove programação alusiva ao mês de conscientização sobre a prematuridade",
+      "resumo": "Um dos destaques da programação será o desfile de mais de 30 crianças que passaram pela Unidade Neonatal. Assessoria de Comunicação Social da UFPE",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570087",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7553948/13.11.26+fotHCPrematuridade.png/79219079-5f4d-4b81-b49d-0c997e744a75?t=1794599160640",
+      "visto": true
+    },
+    {
+      "titulo": "UFPE estreita parceria com Corpo de Bombeiros para fortalecer ações de segurança contra incêndio",
+      "resumo": "A iniciativa teve entre seus objetivos ampliar as ações de prevenção e segurança contra incêndio nas instalações da Universidade. Assessoria de Comunicação Social da…",
+      "data": "2026-11-13",
+      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7570041",
+      "fonte": "UFPE",
+      "tags": [
+        "Universidade"
+      ],
+      "imagem": "https://www.ufpe.br/documents/40615/7553948/13.11.26+fotBombeiros.png/bb3a178a-ce54-4fdf-8ee4-b3054bde000a?t=1794599119939",
+      "visto": true
+    },
     {
       "titulo": "UFPE abre o Novembro Negro com palestra sobre filosofia afro-brasileira e equidade racial",
       "resumo": "Encontro reuniu pesquisadores e representantes do movimento negro com o propósito de discutir a justiça como princípio filosófico, político e social. Assessoria de…",
@@ -146,76 +241,6 @@
       "visto": true
     },
     {
-      "titulo": "Parque.TeC UFPE tem sete atividades na programação do RECnPlay 2026",
-      "resumo": "A programação reúne debates sobre ciência, tecnologia, empreendedorismo e inovação. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-11-10",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7563813",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7553948/10.11.26+fotParque.TeC.png/824f64bc-2e4f-4440-a0c0-54fe22582b1b?t=1794335369354",
-      "visto": true
-    },
-    {
-      "titulo": "CIn apresenta iniciativa para jovens com altas habilidades e superdotação no RECnPlay",
-      "resumo": "O Programa Supertalentos oferece formação científica gratuita a jovens com superdotação intelectual. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-11-10",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7563802",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7553948/10.11.26+fotCIn.png/fbc7d156-7564-4047-9862-dcdf19376325?t=1794335343677",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE concede título de Doutora Honoris Causa à deputada federal Luiza Erundina",
-      "resumo": "O título é destinado a personalidades de notório saber e reconhecida relevância pública. A cerimônia de outorga foi realizada na sexta (6). Assessoria de Comunicação…",
-      "data": "2026-11-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7562562",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7553948/09.11.26+fotHonorisCausaErundina+%28Vale+Este%29.png/dda23656-d75d-4e3a-8ec4-7646521a05ab?t=1794254415675",
-      "visto": true
-    },
-    {
-      "titulo": "Vestibular para os cursos de Dança e Música tem inscrições abertas",
-      "resumo": "As inscrições podem ser feitas de hoje (9) a 30 de novembro. Serão disponibilizadas 112 vagas ao todo. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-11-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7562313",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "visto": true
-    },
-    {
-      "titulo": "Orquestra Sinfônica da UFPE apresenta concerto gratuito na Matriz de São José",
-      "resumo": "Aberto ao público e com entrada gratuita, o concerto ocorre às 19h30 desta terça (10). Assessoria de Comunicação Social da UFPE",
-      "data": "2026-11-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7562244",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7553948/09.11.26+fotOrquestra.png/3d756e6c-35be-4047-aad6-99a26575f7d1?t=1794255115874",
-      "visto": true
-    },
-    {
-      "titulo": "UFPE participa da principal conferência de dados abertos e métodos digitais da América Latina",
-      "resumo": "O evento terá como tema “Como aproximar os dados da academia do jornalismo e das decisões políticas cotidianas?”. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-11-09",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7562302",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "visto": true
-    },
-    {
       "titulo": "UFPE disponibilizará wi-fi gratuito para visitantes em todos os campi a partir de 18 de novembro",
       "resumo": "O serviço, integrado à plataforma Gov.br, está sendo implantado gradualmente desde outubro deste ano",
       "data": "2026-11-06",
@@ -225,30 +250,6 @@
         "Campus"
       ],
       "imagem": "https://www.ufpe.br/documents/40615/7553948/06.11.26+fotWifi.png/309e39fe-3a49-473a-af0b-dd314c69b8cd?t=1793995304256",
-      "visto": true
-    },
-    {
-      "titulo": "Estudo de professores da UFPE mostra inexistência de anomalias na eleição presidencial de 2026",
-      "resumo": "Para chegar aos resultados, os autores da pesquisa aplicaram um teste estatístico que já expôs fraudes nas eleições russas. Assessoria de Comunicação Social da UFPE",
-      "data": "2026-11-06",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7559262",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7553948/06.11.26+fotElei%C3%A7%C3%B5es.png/b9cdd44c-38ad-442e-9c92-ca5135c1d771?t=1793992330315",
-      "visto": true
-    },
-    {
-      "titulo": "HC-UFPE prevê cerca de 340 atendimentos em mutirão nacional da Rede HU Brasil neste sábado (7)",
-      "resumo": "Apenas as consultas do Mutirão de Prevenção à Cegueira por Glaucoma serão realizadas sem marcação prévia (porta aberta). Assessoria de Comunicação Social da UFPE",
-      "data": "2026-11-06",
-      "link": "https://www.ufpe.br/ascom/-/asset_publisher/dlhi8nsrz4hK/content/id/7558691",
-      "fonte": "UFPE",
-      "tags": [
-        "Universidade"
-      ],
-      "imagem": "https://www.ufpe.br/documents/40615/7553948/06.11.26+fotMutir%C3%A3oHC.png/6716ec68-b035-4900-b531-388201f800fa?t=1793991609700",
       "visto": true
     },
     {
