@@ -1220,3 +1220,6 @@ code{
 .lihof-logo-claro{display:none!important}
 [data-tema="dia"] .lihof-logo-escuro{display:none!important}
 [data-tema="dia"] .lihof-logo-claro{display:block!important}
+.faixa-lihof{display:block;width:min(260px,70%);height:auto;margin-bottom:var(--e5)}
+.rodape-lihof{display:block;width:150px;height:auto;margin-bottom:var(--e5);opacity:.86}
+[data-tema="dia"] .rodape-lihof{content:url("../assets/marca/lihof-claro.png")}
