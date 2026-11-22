@@ -305,7 +305,8 @@ p{margin:0}
   font-weight:600;
   letter-spacing:-.035em;
 }
-.abertura h1 .revela{white-space:nowrap}
+.abertura h1 .linha-maior,.abertura h1 .linha-menor{display:block}
+.abertura h1 .linha-maior{white-space:nowrap}
 .abertura h1 .linha-menor{
   font-family:var(--sans);
   font-size:clamp(18px,2vw,26px);
@@ -314,8 +315,6 @@ p{margin:0}
   margin-top:var(--e4);
   color:rgba(255,255,255,.9);
 }
-.abertura h1 .conector{color:#FFC2C9}
-.abertura h1 em{font-style:normal;color:#fff}
 
 .abertura-placa{
   position:relative;
@@ -332,19 +331,6 @@ p{margin:0}
   clip:rect(0 0 0 0); clip-path:inset(50%);
   white-space:nowrap; border:0;
 }
-.rolo-palavra{white-space:nowrap}
-.rolo{display:inline-block;overflow:hidden;height:1.2em;vertical-align:-.3em}
-.rolo--girando{
-  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 24%,#000 76%,transparent 100%);
-  mask-image:linear-gradient(180deg,transparent 0,#000 24%,#000 76%,transparent 100%);
-}
-.rolo-fita{display:block;will-change:transform}
-.rolo-letra{
-  display:block;width:100%;height:1.2em;line-height:1.2em;
-  letter-spacing:0;text-align:center;overflow:hidden;
-}
-.rolo-regua{position:absolute;visibility:hidden;white-space:pre;left:-9999px;top:-9999px}
-.rolo-letra--eco{color:#FFC2C9;opacity:.6}
 
 .abertura-acoes{display:flex;flex-wrap:wrap;gap:var(--e3);margin-top:var(--e6)}
 
@@ -355,7 +341,7 @@ p{margin:0}
   margin-bottom:var(--e10);
 }
 .cabeca h1{font-size:var(--t10);letter-spacing:-.03em;max-width:18ch}
-.cabeca h1 em{font-style:normal;color:#FFC2C9}
+.cabeca h1 em{font-style:normal;color:inherit}
 .cabeca .linha-fina{margin-top:var(--e5);color:rgba(255,255,255,.88)}
 .cabeca .linha-fina a{color:#fff}
 .cabeca .abertura-acoes{margin-top:var(--e5);gap:var(--e2)}
@@ -366,6 +352,16 @@ p{margin:0}
 .cabeca .botao--linha{color:#fff;border-color:rgba(255,255,255,.5)}
 .cabeca .botao--linha:hover{border-color:#fff;color:#fff}
 .cabeca + .secao,.cabeca + .secao--curta{padding-top:0}
+.cabeca--duas .palco{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:var(--e5) var(--e8);
+  align-items:end;
+}
+.cabeca--duas h1{max-width:none;font-size:var(--t9)}
+.cabeca--duas .lihof-logo{margin-bottom:var(--e5)}
+.cabeca--duas .linha-fina{margin-top:0;font-size:var(--t4);line-height:1.7}
+.cabeca--duas .indice{margin-top:var(--e5)}
 
 .editorial{
   display:grid;
@@ -786,7 +782,7 @@ a.material:hover{color:inherit;background:var(--superficie-2)}
 .rodape-logo{width:190px;filter:brightness(0) invert(1);opacity:.9}
 .rodape-elos{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:var(--e2) var(--e5)}
 .rodape-elos a{color:#fff;text-decoration:none;font-size:var(--t3);font-weight:600}
-.rodape-elos a:hover{color:#FFC2C9;text-decoration:underline}
+.rodape-elos a:hover{color:#fff;opacity:.75}
 .rodape-fim{
   grid-column:1 / -1;
   display:flex;flex-wrap:wrap;gap:var(--e2) var(--e5);justify-content:space-between;
@@ -804,15 +800,6 @@ a.material:hover{color:inherit;background:var(--superficie-2)}
 .areas .entra:nth-child(3),.equipe .entra:nth-child(3){transition-delay:.16s}
 
 .revela{display:block}
-.abertura .revela{
-  padding-bottom:.14em; margin-bottom:-.14em;
-  clip-path:inset(0 0 105% 0);
-  transform:translateY(.26em);
-  transition:clip-path 1s var(--ease), transform 1s var(--ease);
-}
-.abertura .dentro > .revela{clip-path:inset(0);transform:none}
-.abertura .dentro > .revela:nth-child(2){transition-delay:.1s}
-
 @media (max-width:1180px){
   .nav{display:none}
   .menu-botao{display:grid}
@@ -824,6 +811,7 @@ a.material:hover{color:inherit;background:var(--superficie-2)}
 @media (max-width:900px){
   .abertura-caixa,.editorial{grid-template-columns:minmax(0,1fr);gap:var(--e6)}
   .editorial--fixo > :first-child{position:static}
+  .cabeca--duas .palco{grid-template-columns:minmax(0,1fr)}
   .equipe,.areas{grid-template-columns:minmax(0,1fr)}
   .rodape-caixa{grid-template-columns:minmax(0,1fr)}
   .rodape-elos{justify-content:flex-start}
@@ -856,5 +844,4 @@ a.material:hover{color:inherit;background:var(--superficie-2)}
     scroll-behavior:auto !important;
   }
   .entra{opacity:1;transform:none}
-  .abertura .revela{clip-path:none;transform:none}
 }
