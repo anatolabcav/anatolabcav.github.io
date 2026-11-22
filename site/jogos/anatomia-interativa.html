@@ -69,27 +69,37 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
 
 <main id="conteudo">
 
-  <section class="cabeca">
+  <section class="cabeca cabeca--midia">
     <div class="palco">
-      <h1><span class="revela">Anatomia Interativa</span></h1>
-      <p class="linha-fina">
-        Jogo de tabuleiro digital sobre o sistema digestório, destinado às aulas
-        práticas de anatomia. As equipes percorrem o trato em cinquenta posições e
-        respondem a questões relativas ao órgão em que se encontram, de maneira
-        que o conteúdo exigido acompanha o avanço no tabuleiro.
-      </p>
-      <div class="abertura-acoes">
-        <span class="selo"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#check"/></svg>Disponível</span>
-        <span class="selo selo--frio"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#rede"/></svg>Dispensa conexão</span>
-        <span class="selo selo--ocre"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#planilha"/></svg>Questões em planilha</span>
+      <div class="cabeca-texto">
+        <h1><span class="revela">Anatomia Interativa</span></h1>
+        <p class="linha-fina">
+          Jogo de tabuleiro digital sobre o sistema digestório, destinado às aulas
+          práticas de anatomia. As equipes percorrem o trato em cinquenta posições e
+          respondem a questões relativas ao órgão em que se encontram, de maneira
+          que o conteúdo exigido acompanha o avanço no tabuleiro.
+        </p>
+        <div class="abertura-acoes">
+          <span class="selo"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#check"/></svg>Disponível</span>
+          <span class="selo selo--frio"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#rede"/></svg>Dispensa conexão</span>
+          <span class="selo selo--ocre"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#planilha"/></svg>Questões em planilha</span>
+        </div>
       </div>
+      <figure class="cabeca-tela">
+        <img src="../assets/jogo/tela-pergunta.jpg" width="1600" height="1000" decoding="async"
+             alt="Tela principal do jogo durante uma pergunta: o tabuleiro escurecido ao fundo, o cartão com a questão e quatro alternativas, e o cronômetro">
+      </figure>
     </div>
   </section>
 
   <section class="secao--curta palco">
-    <div class="negato entra">
-      <img src="../assets/jogo/preparacao.jpg" loading="lazy" decoding="async"
-           alt="Tela de preparação da partida: a planilha de perguntas reconhecida, a lista de equipes, e os campos de tempos e regras">
+    <div class="vitrine entra">
+      <img class="vitrine-telao" src="../assets/jogo/tela-tabuleiro.jpg" width="1600" height="1000"
+           loading="lazy" decoding="async"
+           alt="Tela do projetor: o tabuleiro do trato digestório com as cinquenta casas, o aviso da equipe da vez e o placar ao lado">
+      <img class="vitrine-celular" src="../assets/jogo/tela-celular.jpg" width="520" height="1125"
+           loading="lazy" decoding="async"
+           alt="Tela do celular de uma equipe: a escolha da comida que representa a equipe e o botão para entrar no jogo">
     </div>
   </section>
 
@@ -156,8 +166,6 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
   </section>
 
   <section class="secao--curta">
-    <div class="palco">
-    </div>
     <div class="numeros">
       <div class="numero"><b data-conta="50">0</b><span>posições no tabuleiro</span></div>
       <div class="numero"><b data-conta="6">0</b><span>equipes por partida</span></div>
@@ -166,60 +174,67 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
     </div>
   </section>
 
-  <section class="secao palco palco--estreito">
-    <h2 class="titulo-secao"><span class="revela">Como utilizar em aula</span></h2>
+  <section class="secao palco">
+    <div class="editorial editorial--fixo uso">
+      <div>
+        <h2 class="titulo-secao"><span class="revela">Como utilizar em aula</span></h2>
+        <img class="uso-tela" src="../assets/jogo/tela-preparacao.jpg" width="1600" height="1000"
+             loading="lazy" decoding="async"
+             alt="Tela de preparação da partida: a planilha de perguntas reconhecida, a lista de equipes, e os campos de tempos e regras">
+      </div>
 
-    <div class="passos">
-      <div class="passo entra">
-        <div>
-          <h3>Instalar o Node.js</h3>
-          <p>
-            Deve ser obtida a versão LTS em
-            <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">nodejs.org</a>.
-            Esta é a única etapa que exige conexão com a internet, e ocorre uma
-            única vez por computador.
-          </p>
+      <div class="passos">
+        <div class="passo entra">
+          <div>
+            <h3>Instalar o Node.js</h3>
+            <p>
+              Deve ser obtida a versão LTS em
+              <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">nodejs.org</a>.
+              Esta é a única etapa que exige conexão com a internet, e ocorre uma
+              única vez por computador.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="passo entra">
-        <div>
-          <h3>Preparar as questões</h3>
-          <p>
-            O arquivo <code>Perguntas-modelo.xlsx</code> deve ser copiado para a
-            área de trabalho e renomeado como <code>Perguntas.xlsx</code>. A
-            partir desse ponto o conteúdo pertence ao professor, que o edita em
-            planilha, sem necessidade de alterar o código.
-          </p>
+        <div class="passo entra">
+          <div>
+            <h3>Preparar as questões</h3>
+            <p>
+              O arquivo <code>Perguntas-modelo.xlsx</code> deve ser copiado para a
+              área de trabalho e renomeado como <code>Perguntas.xlsx</code>. A
+              partir desse ponto o conteúdo pertence ao professor, que o edita em
+              planilha, sem necessidade de alterar o código.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="passo entra">
-        <div>
-          <h3>Iniciar a aplicação</h3>
-          <p>
-            O arquivo <code>INICIAR.bat</code> abre o navegador em
-            <code>localhost:3000</code>, onde a tela principal é exibida.
-          </p>
+        <div class="passo entra">
+          <div>
+            <h3>Iniciar a aplicação</h3>
+            <p>
+              O arquivo <code>INICIAR.bat</code> abre o navegador em
+              <code>localhost:3000</code>, onde a tela principal é exibida.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="passo entra">
-        <div>
-          <h3>Abrir a rede e cadastrar as equipes</h3>
-          <p>
-            Com o ponto de acesso do celular ativo e o computador conectado a
-            ele, a tela principal exibe o código QR. Cada equipe realiza a
-            leitura, informa nome e ícone e passa a constar da lista, admitidas
-            até seis equipes por partida.
-          </p>
+        <div class="passo entra">
+          <div>
+            <h3>Abrir a rede e cadastrar as equipes</h3>
+            <p>
+              Com o ponto de acesso do celular ativo e o computador conectado a
+              ele, a tela principal exibe o código QR. Cada equipe realiza a
+              leitura, informa nome e ícone e passa a constar da lista, admitidas
+              até seis equipes por partida.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="passo entra">
-        <div>
-          <h3>Conduzir a partida</h3>
-          <p>
-            Concluído o cadastro, os marcadores se deslocam para a primeira
-            posição e a primeira equipe lança o dado, cabendo ao professor a
-            condução a partir daí.
-          </p>
+        <div class="passo entra">
+          <div>
+            <h3>Conduzir a partida</h3>
+            <p>
+              Concluído o cadastro, os marcadores se deslocam para a primeira
+              posição e a primeira equipe lança o dado, cabendo ao professor a
+              condução a partir daí.
+            </p>
+          </div>
         </div>
       </div>
     </div>
