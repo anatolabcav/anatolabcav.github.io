@@ -87,10 +87,17 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
         científica dos ossos, é possível investigar características biológicas e
         contribuir para a compreensão da identidade de indivíduos.
       </p>
+      <nav class="indice" aria-label="Nesta página">
+        <a href="#colecao">A coleção</a>
+        <a href="#perfil">Perfil biológico</a>
+        <a href="#trauma">Trauma</a>
+        <a href="#tanatologia">Tanatologia</a>
+        <a href="#ensino">Ensino</a>
+      </nav>
     </div>
   </section>
 
-  <section class="secao palco">
+  <section class="secao palco" id="colecao">
     <div class="jogo-destaque jogo-destaque--topo">
       <div>
         <h2 class="titulo-secao"><span class="revela">A coleção de ossos.</span></h2>
@@ -113,55 +120,76 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
     </div>
   </section>
 
-  <section class="secao palco" id="perfil">
-    <h2 class="titulo-secao"><span class="revela">Perfil biológico de ossadas.</span></h2>
-    <div class="prosa prosa--coluna">
-      <h3>O que os ossos podem revelar?</h3>
-      <p>
+  <section class="secao secao--fundo" id="perfil">
+    <div class="palco">
+      <div class="editorial">
+        <div>
+          <h2 class="titulo-secao"><span class="revela">Perfil biológico de ossadas.</span></h2>
+          <h3 class="editorial-sub">O que os ossos podem revelar?</h3>
+        </div>
+        <div class="prosa prosa--coluna">
+        <p>
         A análise antropológica dos remanescentes ósseos permite estimar um
         conjunto de características biológicas que ajuda a orientar o processo
         de identificação humana. Esse conjunto, chamado perfil biológico, não
         identifica uma pessoa por si só: contribui para reduzir o universo de
         possíveis indivíduos e pode ser integrado a outras evidências, como dados
         odontológicos e genéticos.
-      </p>
-      <p>
+        </p>
+        <p>
         A estimativa é feita pela observação conjunta de diferentes ossos e
         características, considerando a preservação do material e os métodos
         adequados a cada caso:
-      </p>
-    </div>
+        </p>
+        </div>
+      </div>
 
-    <dl class="definicoes" style="margin-top:var(--e7)">
-      <div><dt>Estimativa do sexo biológico</dt><dd>Baseia-se em características morfológicas e métricas do esqueleto. A pelve costuma fornecer os indicadores mais informativos; o crânio e outros elementos ósseos podem complementar a análise. Trata-se de uma estimativa do sexo biológico, não da identidade de gênero.</dd></div>
-      <div><dt>Estimativa da idade à morte</dt><dd>Considera mudanças relacionadas ao crescimento e ao envelhecimento. A avaliação pode incluir o desenvolvimento e a erupção dentária, especialmente em indivíduos jovens, e alterações em regiões como a sínfise púbica e a superfície auricular do ílio, entre outros indicadores. O resultado é geralmente apresentado como uma faixa estimada, não como uma idade exata.</dd></div>
-      <div><dt>Estimativa da estatura</dt><dd>Utiliza medidas de ossos longos, como o fêmur e a tíbia, aplicadas a métodos estatísticos apropriados. A escolha da equação considera características do indivíduo e da população de referência, e o resultado também inclui uma margem de incerteza.</dd></div>
-    </dl>
+      <div class="grade grade--3 estimativas">
+        <article class="cartao entra">
+          <div class="cartao-icone"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg?v=dev#pessoa"/></svg></div>
+          <h3>Estimativa do sexo biológico</h3>
+          <p>Baseia-se em características morfológicas e métricas do esqueleto. A pelve costuma fornecer os indicadores mais informativos; o crânio e outros elementos ósseos podem complementar a análise. Trata-se de uma estimativa do sexo biológico, não da identidade de gênero.</p>
+        </article>
+        <article class="cartao entra">
+          <div class="cartao-icone"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg?v=dev#ampulheta"/></svg></div>
+          <h3>Estimativa da idade à morte</h3>
+          <p>Considera mudanças relacionadas ao crescimento e ao envelhecimento. A avaliação pode incluir o desenvolvimento e a erupção dentária, especialmente em indivíduos jovens, e alterações em regiões como a sínfise púbica e a superfície auricular do ílio, entre outros indicadores. O resultado é geralmente apresentado como uma faixa estimada, não como uma idade exata.</p>
+        </article>
+        <article class="cartao entra">
+          <div class="cartao-icone"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg?v=dev#regua"/></svg></div>
+          <h3>Estimativa da estatura</h3>
+          <p>Utiliza medidas de ossos longos, como o fêmur e a tíbia, aplicadas a métodos estatísticos apropriados. A escolha da equação considera características do indivíduo e da população de referência, e o resultado também inclui uma margem de incerteza.</p>
+        </article>
+      </div>
 
-    <div class="prosa prosa--coluna" style="margin-top:var(--e7)">
-      <p>
+      <div class="prosa prosa--coluna fecho">
+        <p>
         Como cada esqueleto preserva informações diferentes, a análise combina os
         indicadores disponíveis e considera suas limitações. No Brasil, também é
         importante avaliar se os métodos utilizados foram validados para a
         população pertinente. Assim, a osteologia forense transforma observações
         anatômicas cuidadosas em informações que podem apoiar investigações e
         contribuir para a identificação humana.
-      </p>
+        </p>
+      </div>
     </div>
   </section>
 
   <section class="secao palco" id="trauma">
-    <h2 class="titulo-secao"><span class="revela">Trauma e paleopatologia.</span></h2>
-    <div class="prosa prosa--coluna">
-      <h3>Marcas que registram lesões, doenças e processos de transformação do osso</h3>
-      <p>
+    <div class="editorial editorial--fixo">
+      <div>
+        <h2 class="titulo-secao"><span class="revela">Trauma e paleopatologia.</span></h2>
+        <h3 class="editorial-sub">Marcas que registram lesões, doenças e processos de transformação do osso</h3>
+      </div>
+      <div class="prosa prosa--coluna">
+        <p>
         O esqueleto pode preservar sinais de traumas e de condições que afetaram
         o tecido ósseo ao longo da vida. Na análise forense, cada alteração é
         examinada com atenção à sua localização, forma, distribuição e relação
         com a anatomia, para distinguir lesões traumáticas de mudanças causadas
         por doenças ou por processos ocorridos após a morte.
-      </p>
-      <p>
+        </p>
+        <p>
         A avaliação do trauma busca estimar quando a lesão ocorreu e que tipo de
         mecanismo pode tê-la produzido. Lesões <em>ante mortem</em> podem
         apresentar sinais de reparação, como remodelação ou formação de calo
@@ -171,8 +199,8 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
         <em>post mortem</em> podem decorrer de fatores ambientais, da ação de
         animais ou do manuseio dos remanescentes. Como esses sinais podem se
         sobrepor, algumas interpretações permanecem inconclusivas.
-      </p>
-      <p>
+        </p>
+        <p>
         A paleopatologia investiga alterações ósseas associadas a doenças,
         traumatismos e outros processos biológicos. Quando possível, esses
         achados ajudam a compreender condições de saúde e episódios vividos pelo
@@ -181,11 +209,12 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
         causas. Por isso, os resultados são interpretados em conjunto com as
         características de cada peça e com os limites das evidências
         disponíveis.
-      </p>
+        </p>
+      </div>
     </div>
   </section>
 
-  <section class="faixa" data-video>
+  <section class="faixa" id="tanatologia" data-video>
     <video src="assets/video/besouro-cranio.mp4" muted loop playsinline preload="metadata"
            aria-hidden="true" tabindex="-1"></video>
     <div class="palco">
@@ -214,33 +243,34 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
   </section>
 
   <section class="secao palco" id="ensino">
-    <h2 class="titulo-secao"><span class="revela">Ensino, pesquisa e divulgação científica.</span></h2>
-    <div class="prosa prosa--coluna">
-      <p>
+    <div class="editorial editorial--fixo">
+      <h2 class="titulo-secao"><span class="revela">Ensino, pesquisa e divulgação científica.</span></h2>
+      <div class="prosa prosa--coluna">
+        <p>
         O LIHOF é um espaço de formação e produção de conhecimento em
         antropologia e osteologia forense. Sua coleção osteológica de referência
         e sua infraestrutura apoiam pesquisas sobre identificação humana, perfil
         biológico, variações anatômicas e avaliação de métodos aplicados à
         análise de remanescentes ósseos.
-      </p>
-      <p>
+        </p>
+        <p>
         O laboratório contribui para a formação de estudantes da graduação e para
         o desenvolvimento de pesquisas de pós-graduação, incluindo projetos de
         mestrado e doutorado. Nesse ambiente, estudantes podem participar de
         diferentes etapas da investigação científica, da formulação de perguntas e
         coleta de dados à análise dos resultados e à divulgação do conhecimento.
-      </p>
-      <p>
+        </p>
+        <p>
         A atuação do LIHOF também se fortalece por meio de parcerias entre
         instituições e grupos de pesquisa. Estudos com participação do laboratório
         já envolveram a UFPE e a Universidade de Pernambuco, além de colaboração
         internacional com pesquisadores da Universidade de Coimbra, em Portugal.
         Essas conexões ampliam o intercâmbio científico e favorecem a construção
         de pesquisas contextualizadas para a população brasileira.
-      </p>
+        </p>
+      </div>
     </div>
   </section>
-
 </main>
 
 <footer class="rodape">
