@@ -114,36 +114,6 @@
     alvos.forEach(function (el) { obs.observe(el); });
   }
 
-  function ajustaTitulo() {
-    var titulo = $('.abertura h1');
-    if (!titulo) return;
-
-    var linhas = $$('[data-largura]', titulo);
-    if (!linhas.length) return;
-
-    var caixa = titulo.clientWidth;
-    if (!caixa) return;
-
-    linhas.forEach(function (linha) {
-      if (linha.dataset.base === undefined) {
-        linha.dataset.base = parseFloat(getComputedStyle(titulo).fontSize);
-      }
-
-      var tamanho = parseFloat(linha.dataset.base);
-      var faixa = document.createRange();
-      var passo;
-
-      for (passo = 0; passo < 4; passo++) {
-        linha.style.fontSize = tamanho.toFixed(2) + 'px';
-        faixa.selectNodeContents(linha);
-        var largura = faixa.getBoundingClientRect().width;
-        if (!largura) return;
-        if (Math.abs(largura - caixa) < 0.5) break;
-        tamanho = tamanho * caixa / largura;
-      }
-    });
-  }
-
   function contadores() {
     var alvos = $$('[data-conta]');
     if (!alvos.length) return;
@@ -249,7 +219,6 @@
   }
 
   function tituloPronto() {
-    ajustaTitulo();
     var titulo = $('.abertura h1');
     if (titulo) titulo.classList.add('dentro');
   }
@@ -259,17 +228,6 @@
   } else {
     window.addEventListener('load', tituloPronto);
   }
-
-  var reajuste;
-  var larguraAnterior = window.innerWidth;
-  window.addEventListener('resize', function () {
-    if (window.innerWidth === larguraAnterior) return;
-    larguraAnterior = window.innerWidth;
-    clearTimeout(reajuste);
-    reajuste = setTimeout(function () {
-      ajustaTitulo();
-    }, 180);
-  });
 
   window.SiteLab = { entradas: entradas };
 })();
