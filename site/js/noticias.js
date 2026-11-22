@@ -69,7 +69,7 @@
                  '<span>' + dataCurta(n.data) + etiqueta + '</span></div>' +
                '<h3>' + seguro(n.titulo) + '</h3>' +
                (n.resumo ? '<p>' + seguro(n.resumo) + '</p>' : '') +
-               '<span class="noticia-ler">Ler <span class="seta" aria-hidden="true">&rarr;</span></span>' +
+               '<span class="noticia-ler">Ler</span>' +
              '</div>' +
            '</a>';
   }
@@ -425,7 +425,7 @@
     if (!destino) return '<article class="material">' + miolo + '</article>';
     return '<a class="material entra" href="' + seguro(destino) +
            '" target="_blank" rel="noopener noreferrer">' + miolo +
-           '<span class="material-abrir">Abrir <span class="seta" aria-hidden="true">&rarr;</span></span></a>';
+           '<span class="material-abrir">Abrir</span></a>';
   }
 
   function porData(a, b) {
