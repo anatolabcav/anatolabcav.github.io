@@ -374,7 +374,7 @@ p{margin:0}
   background:var(--negatoscopio);
   clip-path:polygon(0 0,100% 0,100% 84%,88% 100%,0 100%);
 }
-.cabeca-tela img{display:block;width:100%;height:auto}
+.cabeca-tela video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
 
 .vitrine{position:relative;padding:0 min(13%,150px) var(--e7) 0}
 .vitrine-telao{display:block;width:100%;height:auto;border:1px solid var(--borda)}

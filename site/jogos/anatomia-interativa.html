@@ -74,10 +74,8 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
       <div class="cabeca-texto">
         <h1><span class="revela">Anatomia Interativa</span></h1>
         <p class="linha-fina">
-          Jogo de tabuleiro digital sobre o sistema digestório, destinado às aulas
-          práticas de anatomia. As equipes percorrem o trato em cinquenta posições e
-          respondem a questões relativas ao órgão em que se encontram, de maneira
-          que o conteúdo exigido acompanha o avanço no tabuleiro.
+          Jogo de tabuleiro sobre o sistema digestório para as aulas práticas.
+          Cada equipe percorre o trato e responde sobre o órgão em que está.
         </p>
         <div class="abertura-acoes">
           <span class="selo"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#check"/></svg>Disponível</span>
@@ -85,9 +83,9 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
           <span class="selo selo--ocre"><svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#planilha"/></svg>Questões em planilha</span>
         </div>
       </div>
-      <figure class="cabeca-tela">
-        <img src="../assets/jogo/tela-pergunta.jpg" width="1600" height="1000" decoding="async"
-             alt="Tela principal do jogo durante uma pergunta: o tabuleiro escurecido ao fundo, o cartão com a questão e quatro alternativas, e o cronômetro">
+      <figure class="cabeca-tela" data-video>
+        <video src="../assets/video/videojogo.mp4?v=dev" muted loop playsinline preload="auto"
+               poster="../assets/jogo/videojogo-capa.jpg" aria-hidden="true" tabindex="-1"></video>
       </figure>
     </div>
   </section>
@@ -261,24 +259,15 @@ document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
   <section class="secao palco palco--estreito">
     <h2 class="titulo-secao"><span class="revela">Solicitar o material</span></h2>
     <p class="linha-fina">
-      O jogo é cedido sem custo a instituições de ensino. Escreva para
-      <a href="mailto:anatolabcav@gmail.com">anatolabcav@gmail.com</a>
-      informando a instituição e a disciplina em que pretende usá-lo, e o
-      pacote é enviado por e-mail.
+      O jogo é cedido sem custo a instituições de ensino, para uso didático.
+      Escreva informando a instituição e a disciplina, e o pacote chega por e-mail.
     </p>
 
-    <dl class="definicoes" style="margin-top:var(--e7)">
-      <div><dt>Exige</dt><dd><a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">Node.js</a> na versão LTS, instalado uma vez por computador</dd></div>
-      <div><dt>Sistema</dt><dd>Windows, pelo arranque de um clique</dd></div>
-      <div><dt>Instalação</dt><dd>descompactar e abrir o <code>INICIAR.bat</code>, que cuida do resto</dd></div>
-      <div><dt>Licença de uso</dt><dd>livre para uso didático em outras instituições de ensino</dd></div>
-    </dl>
-
-    <div class="abertura-acoes" style="margin-top:var(--e7)">
+    <div class="abertura-acoes" style="margin-top:var(--e6)">
       <a class="botao botao--forte" href="mailto:anatolabcav@gmail.com">
-        Solicitar o material
+        <svg class="icone" aria-hidden="true"><use href="../assets/icones.svg?v=dev#email"/></svg>
+        anatolabcav@gmail.com
       </a>
-      <a class="botao botao--linha" href="../materiais.html">Voltar</a>
     </div>
   </section>
 </main>
