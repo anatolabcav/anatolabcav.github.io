@@ -431,8 +431,6 @@ p{margin:0}
 
 .lihof-logo{margin-bottom:var(--e6)}
 .lihof-logo img{display:block;width:min(280px,70%);height:auto}
-.lihof-logo--mini{display:block;margin:0}
-.lihof-logo--mini img{width:120px}
 .lihof-logo-escuro{display:none!important}
 [data-tema="noite"] .lihof-logo-escuro{display:block!important}
 [data-tema="noite"] .lihof-logo-claro{display:none!important}
