@@ -15,11 +15,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publicar:
+  montar:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.publicacao.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
 
@@ -32,5 +29,12 @@ jobs:
         with:
           path: site
 
+  publicar:
+    needs: montar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacao.outputs.page_url }}
+    steps:
       - id: publicacao
         uses: actions/deploy-pages@v5
