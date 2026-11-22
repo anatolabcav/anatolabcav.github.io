@@ -386,34 +386,6 @@
     });
   }
 
-  function cartaoGaleria(n) {
-    var capa;
-    if (n.videoId) {
-      capa = '<div class="galeria-capa galeria-capa--video"><img src="https://img.youtube.com/vi/' +
-             seguro(n.videoId) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async"></div>';
-    } else if (n.arquivoId) {
-      capa = '<div class="galeria-capa"><img src="https://drive.google.com/thumbnail?id=' +
-             seguro(n.arquivoId) + '&sz=w1200" alt="" loading="lazy" decoding="async"></div>';
-    } else {
-      capa = '<div class="galeria-capa galeria-capa--vazia" aria-hidden="true">' +
-             capaData(n.data) + '</div>';
-    }
-
-    var destino = n.videoId ? 'https://www.youtube.com/watch?v=' + n.videoId
-                : (n.link || (n.arquivoId ? 'https://drive.google.com/file/d/' + n.arquivoId + '/view' : ''));
-
-    var corpo = '<div class="galeria-corpo">' +
-                  (n.data ? '<div class="galeria-meta">' + dataCurta(n.data) +
-                    ((n.tags && n.tags.length) ? ' · ' + seguro(n.tags[0]) : '') + '</div>' : '') +
-                  '<h3>' + seguro(n.titulo) + '</h3>' +
-                  (n.resumo ? '<p>' + seguro(n.resumo) + '</p>' : '') +
-                '</div>';
-
-    if (!destino) return '<article class="galeria-item entra">' + capa + corpo + '</article>';
-    return '<a class="galeria-item entra" href="' + seguro(destino) +
-           '" target="_blank" rel="noopener noreferrer">' + capa + corpo + '</a>';
-  }
-
   function cartaoMaterial(n) {
     var destino = n.arquivoId ? 'https://drive.google.com/file/d/' + n.arquivoId + '/view' : n.link;
     var etiqueta = (n.tags && n.tags.length) ? '<span class="material-etiqueta">' +
@@ -441,22 +413,12 @@
     return true;
   }
 
-  function galeria() {
-    if (!$('[data-galeria-itens]') && !$('[data-materiais-itens]')) return;
+  function materiais() {
+    if (!$('[data-materiais-itens]')) return;
 
     doMural().then(function (tudo) {
-      var projetos = tudo.filter(function (n) { return ehTipo(n, 'proj'); }).sort(porData);
-      var videos = tudo.filter(function (n) { return ehTipo(n, 'víd') || ehTipo(n, 'vid'); }).sort(porData);
-      var materiais = tudo.filter(function (n) { return ehTipo(n, 'mat'); }).sort(porData);
-
-      var houve = false;
-      if (preenche('[data-galeria-itens]', projetos, cartaoGaleria)) houve = true;
-      if (preenche('[data-videos-itens]', videos, cartaoGaleria)) houve = true;
-      if (preenche('[data-materiais-itens]', materiais, cartaoMaterial)) houve = true;
-
-      var vazio = $('[data-galeria-vazia]');
-      if (vazio && houve) vazio.setAttribute('hidden', '');
-
+      var itens = tudo.filter(function (n) { return ehTipo(n, 'mat'); }).sort(porData);
+      preenche('[data-materiais-itens]', itens, cartaoMaterial);
       if (window.SiteLab) window.SiteLab.entradas();
     });
   }
@@ -464,7 +426,7 @@
   function inicia() {
     noticias();
     instagram();
-    galeria();
+    materiais();
   }
 
   if (document.readyState === 'loading') {

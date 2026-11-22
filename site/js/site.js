@@ -12,20 +12,20 @@
   var CHAVE = 'lihof-tema';
 
   function aplicaTema(tema) {
-    if (tema === 'dia') {
-      document.documentElement.setAttribute('data-tema', 'dia');
+    if (tema === 'noite') {
+      document.documentElement.setAttribute('data-tema', 'noite');
     } else {
       document.documentElement.removeAttribute('data-tema');
     }
     $$('.tema').forEach(function (b) {
-      b.setAttribute('aria-pressed', tema === 'dia' ? 'true' : 'false');
-      b.setAttribute('aria-label', tema === 'dia'
-        ? 'Mudar para o tema escuro' : 'Mudar para o tema claro');
+      b.setAttribute('aria-pressed', tema === 'noite' ? 'true' : 'false');
+      b.setAttribute('aria-label', tema === 'noite'
+        ? 'Mudar para o tema claro' : 'Mudar para o tema escuro');
     });
   }
 
   function tema() {
-    var atual = document.documentElement.getAttribute('data-tema') === 'dia' ? 'dia' : 'noite';
+    var atual = document.documentElement.getAttribute('data-tema') === 'noite' ? 'noite' : 'dia';
     aplicaTema(atual);
 
     $$('.tema').forEach(function (botao) {
@@ -43,12 +43,10 @@
 
     var ultimo = window.scrollY;
     var travado = false;
-    var temHeroi = !!$(".abertura");
 
     var aoRolar = function () {
       var y = window.scrollY;
       topo.classList.toggle('desceu', y > 12);
-      if (temHeroi) topo.classList.toggle('no-heroi', y <= 12);
       if (!travado) {
         var desceu = y > ultimo + 6;
         var subiu = y < ultimo - 6;
@@ -314,88 +312,6 @@
     });
   }
 
-  var FUSAO = 1.4;
-
-  function lacoSuave() {
-    var caixa = $('[data-laco]');
-    if (!caixa) return;
-    var vs = $$('video', caixa);
-    if (vs.length < 2) return;
-
-    vs.forEach(function (v) {
-      v.muted = true;
-      v.defaultMuted = true;
-      v.playsInline = true;
-      v.removeAttribute('loop');
-      v.pause();
-    });
-
-    if (menosMovimento.matches) {
-      vs[1].style.display = 'none';
-      return;
-    }
-
-    var ativo = 0;
-    var raf = 0;
-    var naTela = false;
-
-    function toca(v) {
-      var p = v.play();
-      if (p && p.catch) p.catch(function () {});
-    }
-
-    function quadro() {
-      var v = vs[ativo];
-      var o = vs[1 - ativo];
-      var d = v.duration;
-
-      if (isFinite(d) && d > FUSAO) {
-        var restante = d - v.currentTime;
-
-        if (restante <= FUSAO) {
-          if (o.paused) { o.currentTime = 0; toca(o); }
-          var k = Math.max(0, Math.min(1, restante / FUSAO));
-          v.style.opacity = k;
-          o.style.opacity = 1 - k;
-        }
-
-        if (restante <= 0.08) {
-          v.pause();
-          v.currentTime = 0;
-          v.style.opacity = 0;
-          o.style.opacity = 1;
-          ativo = 1 - ativo;
-        }
-      }
-
-      if (naTela) raf = requestAnimationFrame(quadro);
-    }
-
-    function liga() {
-      if (naTela) return;
-      naTela = true;
-      if (vs[ativo].paused) toca(vs[ativo]);
-      raf = requestAnimationFrame(quadro);
-    }
-
-    function desliga() {
-      naTela = false;
-      cancelAnimationFrame(raf);
-      vs.forEach(function (v) { v.pause(); });
-    }
-
-    vs[0].style.opacity = 1;
-    vs[1].style.opacity = 0;
-
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(function (itens) {
-        if (itens[0].isIntersecting) liga(); else desliga();
-      }, { threshold: 0 }).observe(caixa);
-    } else {
-      liga();
-    }
-  }
-
   function ano() {
     $$('[data-ano]').forEach(function (el) {
       el.textContent = new Date().getFullYear();
@@ -419,7 +335,6 @@
     entradas();
     contadores();
     videos();
-    lacoSuave();
     ano();
   }
 

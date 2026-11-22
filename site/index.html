@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Laboratório de Anatomia · CAV/UFPE</title>
 <meta name="description" content="Laboratório de Anatomia do Centro Acadêmico de Vitória da UFPE: ensino prático de anatomia humana e comparada, material didático de acesso aberto e o LIHOF, laboratório associado de osteologia forense.">
-<meta name="theme-color" content="#0E0F11">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="assets/marca/cav-ufpe.png">
 
 <script>
-(function(){try{if(localStorage.getItem('lihof-tema')==='dia')
-document.documentElement.setAttribute('data-tema','dia');}catch(e){}})();
+(function(){try{if(localStorage.getItem('lihof-tema')==='noite')
+document.documentElement.setAttribute('data-tema','noite');}catch(e){}})();
 </script>
 
 <link rel="stylesheet" href="css/site.css">
@@ -38,20 +38,16 @@ document.documentElement.setAttribute('data-tema','dia');}catch(e){}})();
       <a href="index.html">Início</a>
       <a href="laboratorio.html">O laboratório</a>
       <a href="lihof.html">LIHOF</a>
+      <a href="liga.html">Liga</a>
       <a href="materiais.html">Materiais</a>
-      <a href="galeria.html">Galeria</a>
       <a href="noticias.html">Notícias</a>
       <a href="contato.html">Contato</a>
     </nav>
 
     <div class="topo-acoes">
-      <button class="tema" type="button" aria-pressed="false" aria-label="Mudar para o tema claro">
-        <svg class="sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
-        </svg>
-        <svg class="lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
-        </svg>
+      <button class="tema" type="button" aria-pressed="false" aria-label="Mudar para o tema escuro">
+        <svg class="icone lua" aria-hidden="true"><use href="assets/icones.svg#lua"/></svg>
+        <svg class="icone sol" aria-hidden="true"><use href="assets/icones.svg#sol"/></svg>
       </button>
 
       <button class="menu-botao" type="button" aria-expanded="false" aria-controls="gaveta" aria-label="Abrir o menu">
@@ -65,34 +61,30 @@ document.documentElement.setAttribute('data-tema','dia');}catch(e){}})();
   <a href="index.html">Início</a>
   <a href="laboratorio.html">O laboratório</a>
   <a href="lihof.html">LIHOF</a>
+  <a href="liga.html">Liga</a>
   <a href="materiais.html">Materiais</a>
-  <a href="galeria.html">Galeria</a>
   <a href="noticias.html">Notícias</a>
   <a href="contato.html">Contato</a>
-  <a href="https://www.instagram.com/laecav/" target="_blank" rel="noopener noreferrer">@laecav</a>
 </div>
 
 <main id="conteudo">
 
-  <section class="abertura" data-laco>
-    <video class="abertura-fundo" src="assets/video/hemacias.mp4"
-           muted playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
-    <video class="abertura-fundo" src="assets/video/hemacias.mp4"
-           muted playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
-
+  <section class="abertura">
     <div class="palco abertura-caixa">
-
       <h1><span class="revela" data-largura data-rolo>Anatomia humana</span>
           <span class="revela linha-menor"><span class="conector" data-rolo>e</span> <em data-rolo>comparada</em><span data-rolo>.</span></span></h1>
 
+      <div class="abertura-placa" data-video>
+        <video src="assets/video/sistemas.mp4" muted loop playsinline preload="auto"
+               aria-hidden="true" tabindex="-1"></video>
+      </div>
     </div>
-
   </section>
 
   <section class="secao palco">
-    <div class="jogo-destaque">
+    <div class="editorial">
+      <h2 class="titulo-secao"><span class="revela">O corpo humano.</span></h2>
       <div>
-        <h2 class="titulo-secao"><span class="revela">O corpo humano.</span></h2>
         <p class="linha-fina">
           O ensino adota a abordagem sistêmica da anatomia, na qual o corpo é
           apresentado como um conjunto de sistemas de órgãos reunidos por
@@ -104,40 +96,81 @@ document.documentElement.setAttribute('data-tema','dia');}catch(e){}})();
           funcionamento dos demais.
         </p>
         <div class="abertura-acoes">
-          <a class="botao botao--linha" href="laboratorio.html#acervo">
+          <a class="botao botao--forte" href="laboratorio.html#acervo">
+            <svg class="icone" aria-hidden="true"><use href="assets/icones.svg#microscopio"/></svg>
             Metodologia
           </a>
         </div>
       </div>
-
-      <div class="negato entra" data-video>
-        <video src="assets/video/sistemas.mp4" muted loop playsinline preload="metadata"
-               aria-hidden="true" tabindex="-1"></video>
-      </div>
     </div>
   </section>
 
-  <section class="faixa">
-    <img class="faixa-fundo" src="assets/bandeja.jpg" alt=""
-         loading="lazy" decoding="async">
+  <section class="secao secao--fundo">
     <div class="palco">
-      <div class="faixa-texto">
-        <img class="faixa-lihof" src="assets/marca/lihof-escuro.png" width="633" height="206"
-             alt="LIHOF, Laboratório de Identificação Humana e Osteologia Forense" loading="lazy">
-        <h2><span class="revela">Perfis biológicos.</span></h2>
-        <p>
-          Ao lado desta casa funciona o LIHOF, laboratório especializado em
-          antropologia forense e osteologia. Lá o material ósseo responde a
-          outra pergunta: quando os tecidos moles não estão mais presentes, o
-          esqueleto permanece como principal fonte de informação sobre o
-          indivíduo, e é dele que se obtêm as estimativas do sexo biológico, da
-          idade à morte e da estatura.
-        </p>
-        <div class="abertura-acoes">
-          <a class="botao botao--claro" href="lihof.html">
-            Conhecer o LIHOF
-          </a>
-        </div>
+      <h2 class="titulo-secao"><span class="revela">Além da bancada.</span></h2>
+
+      <div class="areas">
+
+        <a class="area entra" href="lihof.html">
+          <div class="area-capa" data-video>
+            <video src="assets/video/besouro-cranio.mp4" muted loop playsinline preload="metadata"
+                   aria-hidden="true" tabindex="-1"></video>
+            <svg class="icone area-icone" aria-hidden="true"><use href="assets/icones.svg#cranio"/></svg>
+          </div>
+          <div class="area-corpo">
+            <span class="lihof-logo lihof-logo--mini">
+              <img class="lihof-logo-escuro" src="assets/marca/lihof-escuro.png" width="633" height="206"
+                   alt="LIHOF, Laboratório de Identificação Humana e Osteologia Forense" loading="lazy">
+              <img class="lihof-logo-claro" src="assets/marca/lihof-claro.png" width="630" height="206"
+                   alt="LIHOF, Laboratório de Identificação Humana e Osteologia Forense" loading="lazy">
+            </span>
+            <h3>Perfis biológicos.</h3>
+            <p>
+              Ao lado desta casa funciona o LIHOF, laboratório especializado em
+              antropologia forense e osteologia. Lá o material ósseo responde a
+              outra pergunta: quando os tecidos moles não estão mais presentes, o
+              esqueleto permanece como principal fonte de informação sobre o
+              indivíduo, e é dele que se obtêm as estimativas do sexo biológico, da
+              idade à morte e da estatura.
+            </p>
+            <span class="area-elo">Conhecer o LIHOF</span>
+          </div>
+        </a>
+
+        <a class="area entra" href="liga.html">
+          <div class="area-capa">
+            <img src="assets/bancada.jpg" alt="" loading="lazy" decoding="async">
+            <svg class="icone area-icone" aria-hidden="true"><use href="assets/icones.svg#capelo"/></svg>
+          </div>
+          <div class="area-corpo">
+            <h3>Liga Anatômica dos Estudantes do CAV</h3>
+            <p>
+              A LAECAV reúne estudantes do campus em atividades de ensino,
+              extensão, pesquisa, técnicas de preparo e divulgação ligadas à
+              anatomia. As chamadas de seleção e a programação são publicadas no
+              perfil da liga.
+            </p>
+            <span class="area-elo">Conhecer a liga</span>
+          </div>
+        </a>
+
+        <a class="area entra" href="materiais.html">
+          <div class="area-capa" data-video>
+            <video src="assets/video/videojogo.mp4" muted loop playsinline preload="metadata"
+                   aria-hidden="true" tabindex="-1"></video>
+            <svg class="icone area-icone" aria-hidden="true"><use href="assets/icones.svg#controle"/></svg>
+          </div>
+          <div class="area-corpo">
+            <h3>Material didático</h3>
+            <p>
+              O item atualmente distribuído é o Anatomia Interativa, jogo de
+              tabuleiro digital para o ensino do sistema digestório, apresentado
+              na página de jogos.
+            </p>
+            <span class="area-elo">Ver os jogos</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -230,49 +263,6 @@ document.documentElement.setAttribute('data-tema','dia');}catch(e){}})();
     </div>
   </section>
 
-  <section class="secao palco">
-    <h2 class="titulo-secao"><span class="revela">Além da bancada.</span></h2>
-
-    <div class="grade grade--2" style="margin-top:var(--e7)">
-
-      <article class="cartao entra">
-        <div class="cartao-icone">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-            <path d="M3 12a9 9 0 0 1 18 0v5a3 3 0 0 1-3 3h-3"/><rect x="3" y="12" width="4" height="6" rx="1.5"/><rect x="17" y="12" width="4" height="6" rx="1.5"/>
-          </svg>
-        </div>
-        <h3>Liga Anatômica dos Estudantes do CAV</h3>
-        <p>
-          A LAECAV reúne estudantes do campus em atividades de ensino,
-          extensão, pesquisa, técnicas de preparo e divulgação ligadas à
-          anatomia. As chamadas de seleção e a programação são publicadas no
-          perfil da liga.
-        </p>
-        <div class="pessoa-links">
-          <a href="https://www.instagram.com/laecav/" target="_blank" rel="noopener noreferrer">@laecav</a>
-        </div>
-      </article>
-
-      <article class="cartao cartao--frio entra">
-        <div class="cartao-icone">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-            <rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8M12 18v2"/>
-          </svg>
-        </div>
-        <h3>Material didático</h3>
-        <p>
-          O item atualmente distribuído é o Anatomia Interativa, jogo de
-          tabuleiro digital para o ensino do sistema digestório, apresentado
-          na página de jogos.
-        </p>
-        <div class="pessoa-links">
-          <a href="materiais.html">Ver os jogos</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
   <section class="secao palco" id="instagram" data-instagram hidden>
     <div class="noticias-topo">
       <div>
@@ -298,79 +288,51 @@ document.documentElement.setAttribute('data-tema','dia');}catch(e){}})();
       </a>
     </div>
 
-    <div class="noticias" data-noticias data-destaque data-limite="6">
+    <div class="noticias" data-noticias data-destaque data-limite="3">
       <div class="vazio"><p>Carregando as notícias…</p></div>
     </div>
   </section>
 
-  <section class="secao palco palco--estreito" style="text-align:center">
-    <h2 class="titulo-secao">
-      <span class="revela">Como participar.</span>
-    </h2>
-    <p class="linha-fina" style="margin-inline:auto">
-      As chamadas de monitoria, de iniciação científica e de extensão são
-      divulgadas nos nossos canais e nos da liga acadêmica, e os demais
-      pedidos são recebidos pela <a href="contato.html">página de contato</a>.
-    </p>
-    <div class="abertura-acoes" style="justify-content:center">
-      <a class="botao botao--forte" href="contato.html">
-        Falar conosco
-      </a>
-      <a class="botao botao--linha" href="https://www.instagram.com/lihofcavufpe/" target="_blank" rel="noopener noreferrer">
-        @lihofcavufpe
-      </a>
+  <section class="secao faceta convite">
+    <div class="palco palco--estreito">
+      <h2 class="titulo-secao">
+        <span class="revela">Como participar.</span>
+      </h2>
+      <p class="linha-fina">
+        As chamadas de monitoria, de iniciação científica e de extensão são
+        divulgadas nos nossos canais e nos da liga acadêmica, e os demais
+        pedidos são recebidos pela <a href="contato.html">página de contato</a>.
+      </p>
+      <div class="abertura-acoes">
+        <a class="botao botao--claro" href="contato.html">
+          <svg class="icone" aria-hidden="true"><use href="assets/icones.svg#email"/></svg>
+          Falar conosco
+        </a>
+        <a class="botao botao--linha" href="https://www.instagram.com/lihofcavufpe/" target="_blank" rel="noopener noreferrer">
+          <svg class="icone" aria-hidden="true"><use href="assets/icones.svg#instagram"/></svg>
+          @lihofcavufpe
+        </a>
+      </div>
     </div>
   </section>
-
 </main>
 
 <footer class="rodape">
-  <div class="palco">
-    <div class="rodape-grade">
-
-      <div>
-        <img class="rodape-logo" src="assets/marca/cav-ufpe-marca.png"
-             alt="Universidade Federal de Pernambuco, Centro Acadêmico de Vitória">
-        <p style="color:var(--tinta-2);font-size:var(--t3);max-width:40ch">
-          Laboratório de Anatomia do Centro Acadêmico de Vitória, em Vitória
-          de Santo Antão, Pernambuco.
-        </p>
-      </div>
-
-      <div>
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="laboratorio.html">O laboratório</a></li>
-          <li><a href="lihof.html">LIHOF</a></li>
-          <li><a href="materiais.html">Materiais</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="noticias.html">Notícias</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="https://www.ufpe.br/cav" target="_blank" rel="noopener noreferrer">CAV/UFPE</a></li>
-          <li><a href="https://www.ufpe.br" target="_blank" rel="noopener noreferrer">UFPE</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contato</h4>
-        <ul>
-          <li><a href="contato.html">Fale conosco</a></li>
-          <li><a href="https://www.instagram.com/laecav/" target="_blank" rel="noopener noreferrer">@laecav</a></li>
-          <li><a href="https://www.instagram.com/lihofcavufpe/" target="_blank" rel="noopener noreferrer">@lihofcavufpe</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="rodape-fim">
+  <div class="palco rodape-caixa">
+    <a class="rodape-marca" href="https://www.ufpe.br/cav" target="_blank" rel="noopener noreferrer">
+      <img class="rodape-logo" src="assets/marca/cav-ufpe-marca.png"
+           alt="Universidade Federal de Pernambuco, Centro Acadêmico de Vitória">
+    </a>
+    <nav class="rodape-elos" aria-label="Contato">
+      <a href="contato.html">Fale conosco</a>
+      <a href="https://www.instagram.com/laecav/" target="_blank" rel="noopener noreferrer">@laecav</a>
+      <a href="https://www.instagram.com/lihofcavufpe/" target="_blank" rel="noopener noreferrer">@lihofcavufpe</a>
+    </nav>
+    <p class="rodape-fim">
       <span>© <span data-ano>2026</span> Laboratório de Anatomia · CAV/UFPE</span>
       <span>Vitória de Santo Antão · Pernambuco</span>
-    </div>
+      <span>Ícones: <a href="https://www.streamlinehq.com" target="_blank" rel="noopener noreferrer">Streamline</a>, CC BY 4.0</span>
+    </p>
   </div>
 </footer>
 
