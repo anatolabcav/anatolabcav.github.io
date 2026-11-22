@@ -3,35 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FBF4EC">
+<meta name="theme-color" content="#FFFFFF">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Anatomia Interativa · controle da equipe</title>
 <link rel="icon" href="assets/icons/maca.png">
 <link rel="stylesheet" href="assets/fontes/fontes.css">
 <script>
-(function(){try{if(localStorage.getItem("anatomia-tema")==="dia")
+(function(){try{if(localStorage.getItem("anatomia-tema")!=="noite")
 document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
 </script>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/celular.css">
+<link rel="stylesheet" href="css/atlas.css">
 </head>
 <body>
 
 <div class="conexao" id="conexao" data-estado="ligando">
   <span class="cx-bolha" aria-hidden="true"></span>
   <span id="conexaoTexto">Conectando…</span>
+  <button type="button" class="tema-jogo" aria-pressed="false"
+          aria-label="Mudar para o tema claro">
+    <span class="sol" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#sol"/></svg></span>
+    <span class="lua" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#lua"/></svg></span>
+  </button>
 </div>
 
 <main class="tela" id="telaEntrar">
   <header class="cabeca">
-    <div class="cabeca-linha">
-      <div class="marca">Anatomia Interativa<span class="ponto">.</span></div>
-      <button type="button" class="tema-jogo" aria-pressed="false"
-              aria-label="Mudar para o tema claro">
-        <span class="sol" aria-hidden="true">☀</span>
-        <span class="lua" aria-hidden="true">☾</span>
-      </button>
-    </div>
+    <div class="marca">Anatomia Interativa</div>
     <p class="sub">Escolha a comida da sua equipe.</p>
   </header>
 

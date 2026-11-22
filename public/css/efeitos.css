@@ -26,6 +26,8 @@
   100%{transform:translate(-50%,-140%);opacity:0}}
 .banner .badge{width:44px;height:44px;border-radius:var(--r1);display:grid;place-items:center;
   font-weight:800;font-size:20px;color:#fff}
+.banner .badge.com-icone{background:var(--card)!important;border:3px solid;overflow:hidden;padding:0}
+.banner .badge.com-icone img{width:100%;height:100%;display:block;object-fit:cover}
 .banner .who small{font-family:var(--mono);font-size:var(--t1);letter-spacing:.2em;opacity:.75;
   display:block;text-transform:uppercase}
 .banner .who b{font-family:var(--serif);font-size:22px;font-weight:600}

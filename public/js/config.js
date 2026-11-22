@@ -440,8 +440,8 @@ TRATO.Config = (() => {
     $('botaoIniciar').disabled = !podeIniciar;
 
     const cabem = TRATO.ULTIMA_CASA - 2;
-    const pen = Math.min(qtdPen, cabem, penDisponiveis.length);
-    const van = Math.min(qtdVan, Math.max(0, cabem - pen), vanDisponiveis.length);
+    const pen = penDisponiveis.length ? Math.min(qtdPen, cabem) : 0;
+    const van = vanDisponiveis.length ? Math.min(qtdVan, Math.max(0, cabem - pen)) : 0;
 
     const comRoubo = $('rouboLigado').checked;
     $('cfgResumo').innerHTML = podeIniciar
@@ -467,19 +467,55 @@ TRATO.Config = (() => {
     revalidar();
   });
 
-  function distribuirCartas(cartas, quantidade, livres) {
+  /** Os órgãos que o tabuleiro fixo cobre primeiro, espalhados pelo trato. */
+  function orgaosACobrir(quantidade) {
+    const regioes = TRATO.REGIOES;
+    const quantos = Math.min(quantidade, regioes.length);
+    if (quantos <= 1) return regioes.slice(0, quantos);
+    return Array.from({ length: quantos }, (_, k) =>
+      regioes[Math.round(k * (regioes.length - 1) / (quantos - 1))]);
+  }
+
+  /**
+   * Espalha as cartas pelas casas livres. Com sorteio, `livres` já chega
+   * embaralhado e cada carta fica na primeira casa que a aceita. Sem sorteio, o
+   * tabuleiro sai sempre igual: primeiro uma carta por órgão, na ordem do
+   * trato, e só depois o que sobrar — senão as cartas se amontoam na boca e no
+   * estômago, que é onde quase todas cabem, e o intestino fica vazio.
+   */
+  function distribuirCartas(cartas, quantidade, livres, sortear) {
     const mapa = {};
     if (!quantidade || !cartas.length) return mapa;
 
-    const baralho = embaralhar([...cartas]);
+    const baralho = sortear ? embaralhar([...cartas]) : [...cartas];
+    const usadas = new Set();
+    let postas = 0;
 
-    for (let i = 0; i < quantidade; i++) {
+    const assentar = (carta, cabem, fatia) => {
+      const casa = cabem[Math.min(cabem.length - 1, Math.floor(fatia * cabem.length))];
+      livres.splice(livres.indexOf(casa), 1);
+      mapa[casa] = { ...carta };
+      usadas.add(carta.id);
+      postas++;
+    };
+
+    if (!sortear) {
+      for (const regiao of orgaosACobrir(quantidade)) {
+        const cabe = (c) => !c.regioes || c.regioes.includes(regiao.nome);
+        const carta = baralho.find((c) => cabe(c) && !usadas.has(c.id)) || baralho.find(cabe);
+        if (!carta) continue;
+        const cabem = livres.filter((casa) => TRATO.regiaoDaCasa(casa).nome === regiao.nome);
+        if (cabem.length) assentar(carta, cabem, 0.5);
+      }
+    }
+
+    for (let i = postas; i < quantidade; i++) {
       let colocou = false;
       for (let t = 0; t < baralho.length && !colocou; t++) {
         const carta = baralho[(i + t) % baralho.length];
-        const onde = livres.findIndex((casa) => TRATO.cartaCabeNaCasa(carta, casa));
-        if (onde < 0) continue;
-        mapa[livres.splice(onde, 1)[0]] = { ...carta };
+        const cabem = livres.filter((casa) => TRATO.cartaCabeNaCasa(carta, casa));
+        if (!cabem.length) continue;
+        assentar(carta, cabem, sortear ? 0 : i / quantidade);
         colocou = true;
       }
       if (!colocou) break;
@@ -487,11 +523,15 @@ TRATO.Config = (() => {
     return mapa;
   }
 
-  /** As casas que podem receber carta nesta partida, já embaralhadas. */
-  function casasLivres() {
+  /**
+   * As casas que podem receber carta nesta partida. Embaralhadas quando o
+   * sorteio está ligado; em ordem crescente quando não, para o tabuleiro sair
+   * igual em toda partida.
+   */
+  function casasLivres(sortear) {
     const livres = [];
     for (let c = TRATO.PRIMEIRA_CASA + 1; c < TRATO.ULTIMA_CASA; c++) livres.push(c);
-    return embaralhar(livres);
+    return sortear ? embaralhar(livres) : livres;
   }
 
   /** Fisher-Yates: embaralha no lugar e devolve o mesmo array. */
@@ -504,9 +544,10 @@ TRATO.Config = (() => {
   }
 
   $('botaoIniciar').addEventListener('click', (ev) => {
-    const livres = casasLivres();
-    const penalidadesNoTabuleiro = distribuirCartas(penalidadesValidas(), numero('qtdPenalidades', 0), livres);
-    const vantagensNoTabuleiro   = distribuirCartas(vantagensValidas(),   numero('qtdVantagens', 0),   livres);
+    const sortear = $('sortearCartas').checked;
+    const livres = casasLivres(sortear);
+    const penalidadesNoTabuleiro = distribuirCartas(penalidadesValidas(), numero('qtdPenalidades', 0), livres, sortear);
+    const vantagensNoTabuleiro   = distribuirCartas(vantagensValidas(),   numero('qtdVantagens', 0),   livres, sortear);
 
     const config = {
       equipes: equipes.map((e, i) => ({
@@ -739,8 +780,8 @@ TRATO.Config = (() => {
     lembrarSecoes();
     revelarAoAbrir();
     TRATO.Som.ligarBotoes();
-    penalidades = TRATO.PENALIDADES_PADRAO.map((p) => ({ ...p, ativa: true }));
-    vantagens = TRATO.VANTAGENS_PADRAO.map((p) => ({ ...p, ativa: true }));
+    penalidades = TRATO.PENALIDADES_PADRAO.map((p) => ({ ...p, ativa: p.ativa !== false }));
+    vantagens = TRATO.VANTAGENS_PADRAO.map((p) => ({ ...p, ativa: p.ativa !== false }));
     desenharPenalidades();
     desenharVantagens();
 

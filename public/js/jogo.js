@@ -281,7 +281,7 @@ TRATO.Jogo = (() => {
     desenharPlacar();
     atualizarPainel();
 
-    GameFX.turn(eq.nome, eq.cor, primeiraLetra(eq.nome));
+    GameFX.turn(eq.nome, eq.cor, primeiraLetra(eq.nome), eq.icone);
     definirFase('esperando_dado');
   }
 
@@ -547,11 +547,11 @@ TRATO.Jogo = (() => {
     if (eq.escudos > 0) {
       eq.escudos -= 1;
       veu(true);
-      GameFX.bonus({
+      const espiada = GameFX.bonus({
         nome: 'A microbiota segurou',
         efeito: `${pen.nome} não pega em ${eq.nome} desta vez.`,
       });
-      await espera(2700);
+      await espera(espiada + 100);
       veu(false);
       desenharPlacar();
       transmitirEstado();
@@ -559,8 +559,7 @@ TRATO.Jogo = (() => {
     }
 
     veu(true);
-    GameFX.penalty({ nome: pen.nome, efeito: pen.efeito });
-    await espera(2700);
+    await espera(GameFX.penalty({ nome: pen.nome, efeito: pen.efeito }) + 100);
     veu(false);
 
     if (pen.tipo === 'voltar') {
@@ -584,12 +583,13 @@ TRATO.Jogo = (() => {
    */
   async function aplicarVantagem(eq, van) {
     veu(true);
-    GameFX.bonus({ nome: van.nome, efeito: van.efeito });
-    await espera(2700);
+    await espera(GameFX.bonus({ nome: van.nome, efeito: van.efeito }) + 100);
     veu(false);
 
     if (van.tipo === 'avancar') {
       await Tabuleiro.mover(eq, eq.casa + van.valor, equipes);
+    } else if (van.tipo === 'avancarPara') {
+      await Tabuleiro.mover(eq, van.alvo, equipes);
     } else if (van.tipo === 'escudo') {
       eq.escudos += van.valor;
       GameFX.toast(`${eq.nome} está protegida da próxima penalidade`);

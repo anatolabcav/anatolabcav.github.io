@@ -9,7 +9,7 @@ body{line-height:1.45; overscroll-behavior:none}
 
 .conexao{
   position:fixed; inset:0 0 auto 0; z-index:50; height:var(--faixa);
-  display:flex; align-items:center; justify-content:center; gap:8px;
+  display:flex; align-items:center; justify-content:center; gap:8px; padding:0 60px;
   font-family:var(--mono); font-size:var(--t1); font-weight:700;
   letter-spacing:.12em; text-transform:uppercase;
   background:var(--ink); color:var(--bone);
@@ -21,6 +21,19 @@ body{line-height:1.45; overscroll-behavior:none}
 .conexao[data-estado="caiu"] .cx-bolha{background:#FFD9D5}
 .conexao[data-estado="ligando"] .cx-bolha{animation:pisca 1.1s ease-in-out infinite}
 @keyframes pisca{50%{opacity:.25}}
+
+.conexao .tema-jogo{
+  position:absolute; right:8px; top:50%; margin-top:-12px;
+  width:44px; height:24px; opacity:.85;
+  background:transparent; border-color:currentColor; color:inherit;
+}
+.conexao .tema-jogo::after{
+  width:16px; height:16px; top:3px; left:3px; background:currentColor;
+}
+[data-tema="dia"] .conexao .tema-jogo::after{transform:translateX(20px); background:currentColor}
+.conexao .tema-jogo span{font-size:9px; color:currentColor}
+.conexao .tema-jogo .sol{left:6px}
+.conexao .tema-jogo .lua{right:6px}
 
 .tela{
   min-height:100%; padding:calc(var(--faixa) + 14px) 16px 0;
@@ -103,8 +116,10 @@ body{line-height:1.45; overscroll-behavior:none}
 .acao-titulo{font-family:var(--serif); font-size:var(--t7); font-weight:600; line-height:1.15}
 .acao-sub{color:var(--ink2); font-size:var(--t4); margin:0; max-width:32ch}
 .acao-botao{width:100%}
-.pulsa{animation:pulsa .85s ease-in-out infinite}
-@keyframes pulsa{50%{transform:scale(1.03)}}
+.pulsa{animation:pulsa 1.6s ease-in-out infinite}
+.pulsa:active,.pulsa:disabled{animation:none}
+@keyframes pulsa{50%{filter:brightness(1.18)}}
+@media (prefers-reduced-motion:reduce){.pulsa{animation:none}}
 
 .retrato{width:110px; height:110px; border-radius:var(--r3); display:block; object-fit:cover;
   border:3px solid var(--line)}
@@ -155,4 +170,3 @@ body{line-height:1.45; overscroll-behavior:none}
   *{animation-duration:.001s !important; transition-duration:.001s !important}
 }
 
-.cabeca-linha{display:flex;align-items:center;justify-content:space-between;gap:12px}

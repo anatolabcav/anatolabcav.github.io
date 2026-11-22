@@ -7,12 +7,13 @@
 <link rel="icon" href="assets/icons/maca.png">
 <link rel="stylesheet" href="assets/fontes/fontes.css">
 <script>
-(function(){try{if(localStorage.getItem("anatomia-tema")==="dia")
+(function(){try{if(localStorage.getItem("anatomia-tema")!=="noite")
 document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
 </script>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/efeitos.css">
 <link rel="stylesheet" href="css/trato.css">
+<link rel="stylesheet" href="css/atlas.css">
 </head>
 <body>
 
@@ -20,22 +21,22 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
   <header class="cfg-topo">
     <div>
       <div class="eyebrow">Anatomia · sistema digestório</div>
-      <h1 class="marca">Anatomia Interativa<span class="ponto">.</span></h1>
+      <h1 class="marca">Anatomia Interativa</h1>
     </div>
     <div class="cfg-topo-lado">
       <img class="credito-selo" src="assets/marca/ufpe.png"
            alt="Universidade Federal de Pernambuco, Centro Acadêmico de Vitória">
       <div class="botoes-som">
         <button type="button" class="btn-som" id="botaoSom" aria-pressed="true">
-          <span class="som-icone" aria-hidden="true">♪</span><span id="somRotulo">Som ligado</span>
+          <span class="som-icone" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#som"/></svg></span><span id="somRotulo">Som ligado</span>
         </button>
         <button type="button" class="btn-som" id="botaoMusica" aria-pressed="true">
-          <span class="som-icone" aria-hidden="true">♬</span><span id="musicaRotulo">Música</span>
+          <span class="som-icone" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#musica"/></svg></span><span id="musicaRotulo">Música</span>
         </button>
         <button type="button" class="tema-jogo" id="botaoTema"
                 aria-pressed="false" aria-label="Mudar para o tema claro">
-          <span class="sol" aria-hidden="true">☀</span>
-          <span class="lua" aria-hidden="true">☾</span>
+          <span class="sol" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#sol"/></svg></span>
+          <span class="lua" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#lua"/></svg></span>
         </button>
       </div>
       <a class="link-discreto" href="#" id="linkDiagnostico">Onde procurei a planilha?</a>
@@ -46,7 +47,7 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
 
     <details class="cartao--estado" id="cartaoPlanilha" open>
       <summary class="cartao-cabeca">
-        <h2 class="cartao-titulo"><span class="num">01</span> As perguntas</h2>
+        <h2 class="cartao-titulo">As perguntas</h2>
       </summary>
       <p class="cartao-desc">O jogo procura sozinho um <code>Perguntas.xlsx</code> na sua área de trabalho.</p>
 
@@ -67,7 +68,7 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
 
     <details class="cartao--trabalho" id="cartaoEquipes" open>
       <summary class="cartao-cabeca">
-        <h2 class="cartao-titulo"><span class="num">02</span> As equipes</h2>
+        <h2 class="cartao-titulo">As equipes</h2>
       </summary>
       <p class="cartao-desc">De 2 a 6. Clique no quadrado para escolher a comida da equipe. É ela que vai atravessar o trato.</p>
       <div class="equipes-lista" id="equipesLista"></div>
@@ -78,7 +79,7 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
 
     <details class="cartao--estado" id="cartaoCelulares">
       <summary class="cartao-cabeca">
-        <h2 class="cartao-titulo"><span class="num">03</span> Os celulares</h2>
+        <h2 class="cartao-titulo">Os celulares</h2>
       </summary>
       <p class="cartao-desc">
         Cada equipe entra pelo próprio telefone: rola o dado, escolhe a
@@ -106,7 +107,7 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
 
     <details class="cartao--trabalho" id="cartaoRegras">
       <summary class="cartao-cabeca">
-        <h2 class="cartao-titulo"><span class="num">04</span> Tempos e regras</h2>
+        <h2 class="cartao-titulo">Tempos e regras</h2>
       </summary>
       <div class="campos">
         <label class="campo">
@@ -153,11 +154,19 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
           <small id="abertasNota">as sem alternativa, respondidas em voz alta e julgadas por você</small>
         </span>
       </label>
+
+      <label class="chave" for="sortearCartas">
+        <input type="checkbox" id="sortearCartas" checked>
+        <span class="chave-corpo" aria-hidden="true"><i></i></span>
+        <span class="chave-texto">
+          <b>Sortear as casas de penalidade e vantagem</b>
+        </span>
+      </label>
     </details>
 
     <details class="cartao--catalogo" id="cartaoPenalidades">
       <summary class="cartao-cabeca">
-        <h2 class="cartao-titulo"><span class="num">05</span> As penalidades</h2>
+        <h2 class="cartao-titulo">As penalidades</h2>
       </summary>
       <div class="pen-lista" id="penLista"></div>
       <p class="cartao-nota" id="penAviso"></p>
@@ -165,7 +174,7 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
 
     <details class="cartao--catalogo" id="cartaoVantagens">
       <summary class="cartao-cabeca">
-        <h2 class="cartao-titulo"><span class="num">06</span> As vantagens</h2>
+        <h2 class="cartao-titulo">As vantagens</h2>
       </summary>
       <div class="pen-lista" id="vanLista"></div>
       <p class="cartao-nota" id="vanAviso"></p>
@@ -176,6 +185,7 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
   <footer class="cfg-rodape">
     <div class="cfg-resumo" id="cfgResumo"></div>
     <button type="button" class="btn btn-iniciar" id="botaoIniciar" disabled>Iniciar partida</button>
+    <p class="credito-icones">Ícones: Streamline, CC BY 4.0</p>
   </footer>
 </main>
 
@@ -287,20 +297,20 @@ document.documentElement.setAttribute("data-tema","dia");}catch(e){}})();
     <aside class="painel">
       <div class="painel-topo">
         <div class="painel-marca">
-          <div class="marca-mini">Anatomia Interativa<span class="ponto">.</span></div>
+          <div class="marca-mini">Anatomia Interativa</div>
           <img class="credito-selo mini" src="assets/marca/ufpe.png"
                alt="Universidade Federal de Pernambuco, Centro Acadêmico de Vitória">
         </div>
         <div class="botoes-som">
           <button type="button" class="btn-som mini" id="botaoVertical" aria-pressed="false"
                   title="Vira o tabuleiro para uma tela em pé. O mapa não encolhe: a tela mostra um trecho e acompanha a equipe da vez.">
-            <span class="som-icone" aria-hidden="true">⟳</span><span id="verticalRotulo">Deitado</span>
+            <span class="som-icone" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#girar"/></svg></span><span id="verticalRotulo">Deitado</span>
           </button>
           <button type="button" class="btn-som mini" id="botaoSom2" aria-pressed="true">
-            <span class="som-icone" aria-hidden="true">♪</span><span id="somRotulo2">Som</span>
+            <span class="som-icone" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#som"/></svg></span><span id="somRotulo2">Som</span>
           </button>
           <button type="button" class="btn-som mini" id="botaoMusica2" aria-pressed="true">
-            <span class="som-icone" aria-hidden="true">♬</span><span id="musicaRotulo2">Música</span>
+            <span class="som-icone" aria-hidden="true"><svg class="icone" aria-hidden="true"><use href="assets/icones.svg#musica"/></svg></span><span id="musicaRotulo2">Música</span>
           </button>
         </div>
       </div>

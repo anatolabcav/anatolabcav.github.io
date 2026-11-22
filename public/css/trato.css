@@ -286,15 +286,17 @@ details:not([open]).cartao--catalogo{padding-bottom:0}
 .pen-lista{display:grid; grid-template-columns:repeat(auto-fill,minmax(268px,1fr)); gap:10px}
 .pen-cartao{display:flex; gap:10px; align-items:flex-start; background:var(--card);
   border:1px solid var(--line); border-left:4px solid var(--crimson-d);
-  border-radius:var(--r2); padding:10px; box-shadow:var(--painel-hud)}
-.pen-cartao[data-ativa="false"]{background:transparent; border-left-color:var(--line-forte);
-  box-shadow:none}
-.pen-cartao[data-ativa="false"] .pen-nome{color:var(--ink3)}
-.pen-cartao[data-ativa="false"] .pen-efeito,
-.pen-cartao[data-ativa="false"] .pen-onde{color:var(--ink3)}
+  border-radius:var(--r2); padding:10px; box-shadow:var(--painel-hud);
+  transition:background-color .3s var(--ease), border-color .3s var(--ease),
+             box-shadow .3s var(--ease), transform .3s var(--ease)}
+.pen-cartao[data-ativa="false"]{background:transparent; box-shadow:none;
+  border-style:dashed; border-left-style:solid; border-left-color:var(--crimson);
+  transform:scale(.98)}
+.pen-cartao[data-ativa="false"] .pen-campos{opacity:.45}
 .pen-cartao input[type=checkbox]{width:16px; height:16px; margin-top:3px; flex:none;
   accent-color:var(--teal-t); cursor:pointer}
-.pen-campos{flex:1; min-width:0; display:flex; flex-direction:column; gap:4px}
+.pen-campos{flex:1; min-width:0; display:flex; flex-direction:column; gap:4px;
+  transition:opacity .3s var(--ease)}
 .pen-campos .pen-nome,
 .pen-campos .pen-efeito{
   display:block; width:100%; min-width:0; border:none; background:transparent;
@@ -308,7 +310,7 @@ details:not([open]).cartao--catalogo{padding-bottom:0}
 .pen-campos textarea:focus{outline:none; box-shadow:0 2px 0 var(--teal-d)}
 
 .pen-cartao[data-familia="vantagem"]{border-left-color:var(--green-t)}
-.pen-cartao[data-familia="vantagem"][data-ativa="false"]{border-left-color:var(--line-forte)}
+.pen-cartao[data-familia="vantagem"][data-ativa="false"]{border-left-color:var(--green)}
 .pen-linha-nome{display:flex; align-items:flex-start; gap:6px}
 .pen-linha-nome .pen-nome{flex:1; min-width:0}
 .pen-onde{display:block; margin-top:6px; font-family:var(--mono); font-size:var(--t1);
@@ -353,6 +355,8 @@ details:not([open]).cartao--catalogo{padding-bottom:0}
 }
 @media (prefers-reduced-motion: reduce){
   .marca-casa .halo{animation:none!important; opacity:.45}
+  .pen-cartao,.pen-campos{transition:none}
+  .pen-cartao[data-ativa="false"]{transform:none}
 }
 
 .peca{transition:transform .2s cubic-bezier(.3,1.5,.4,1)}

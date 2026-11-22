@@ -110,19 +110,30 @@ const GameFX = (() => {
     raf = parts.length ? requestAnimationFrame(loop) : (cx.clearRect(0,0,cv.width,cv.height), null);
   }
 
-  const PENS = [
-    ['Refluxo','Volte para o início do esôfago.'],['Cárie','Perca a vez.'],['Úlcera','Volte 3 casas.'],
-    ['Náusea','Volte 2 casas.'],['Apendicite','Volte ao início do intestino delgado.'],
-    ['Prisão de ventre','Fique 1 rodada parado.'],['Cálculo biliar','Pule a próxima jogada.'],
-    ['Intoxicação','Volte 4 casas.']
-  ];
+  const penExemplo = () => {
+    const lista = (window.TRATO && TRATO.PENALIDADES_PADRAO) || [];
+    const p = lista[Math.floor(Math.random()*lista.length)];
+    return p ? [p.nome, p.efeito] : ['Penalidade',''];
+  };
+
+  /**
+   * Quanto a carta fica no telão: o bastante para ler o que ela diz.
+   * "Perca a vez." não precisa dos mesmos segundos que um parágrafo sobre
+   * cálculo biliar, então o tempo acompanha o tamanho do texto.
+   * @returns {number} milissegundos, entre 2,6s e 8,5s
+   */
+  const tempoDeLeitura = (texto) =>
+    Math.min(8500, Math.max(2600, 1600 + 40 * String(texto || '').length));
 
   let timerRAF=null;
   const FX = {
-    turn(name='Estômago', color='#D6645C', letter='E'){
+    turn(name='Estômago', color='#D6645C', letter='E', icon=''){
       hideHint(); GameSound.click();
       $('bannerName').textContent = name;
-      const b=$('bannerBadge'); b.textContent=letter; b.style.background=color;
+      const b=$('bannerBadge'); b.textContent=''; b.style.background=color;
+      b.style.borderColor=color; b.classList.toggle('com-icone', !!icon);
+      if(icon){ const img=document.createElement('img'); img.src=icon; img.alt=''; b.appendChild(img); }
+      else b.textContent=letter;
       replay($('banner'),'show'); GameSound.questionIn();
       setTimeout(()=>$('banner').classList.remove('show'), 2700);
     },
@@ -212,12 +223,14 @@ const GameFX = (() => {
       $('verdictLbl').textContent=team+' roubou!'; $('verdictPlus').textContent='+'+steps+' casas';
       replay(v,'show'); GameSound.correct(); burst(90,'top'); setTimeout(()=>v.classList.remove('show'),1600); },
     penalty(data){
-      hideHint(); const [nm,ef] = data ? [data.nome,data.efeito] : PENS[Math.floor(Math.random()*PENS.length)];
+      hideHint(); const [nm,ef] = data ? [data.nome,data.efeito] : penExemplo();
       const el=$('penalty'); el.classList.remove('boa');
       if($('penTag')) $('penTag').textContent='Casa de penalidade';
       $('penNm').textContent=nm; $('penEf').textContent=ef;
       replay(el,'show'); GameSound.penalty(); GameVibrate([50,40,120]);
-      setTimeout(()=>el.classList.remove('show'), 2600);
+      const dur=tempoDeLeitura(nm+' '+ef);
+      setTimeout(()=>el.classList.remove('show'), dur);
+      return dur;
     },
     bonus(data){
       hideHint(); const {nome,efeito} = data || {nome:'Vantagem',efeito:''};
@@ -225,7 +238,9 @@ const GameFX = (() => {
       if($('penTag')) $('penTag').textContent='Casa de vantagem';
       $('penNm').textContent=nome; $('penEf').textContent=efeito;
       replay(el,'show'); GameSound.bonus(); GameVibrate([25,30,25,30,60]);
-      setTimeout(()=>el.classList.remove('show'), 2600);
+      const dur=tempoDeLeitura(nome+' '+efeito);
+      setTimeout(()=>el.classList.remove('show'), dur);
+      return dur;
     },
     win(team='Estômago', icone=''){
       hideHint(); $('winName').textContent=team+' é um cocô vencedor!';
