@@ -112,7 +112,7 @@ body{
 img,svg,video{display:block;max-width:100%}
 img,video{height:auto}
 
-a{color:var(--veia-t);text-decoration-thickness:1px;text-underline-offset:3px}
+a{color:var(--veia-t);font-weight:600;text-decoration:none}
 a:hover{color:var(--vinho-t)}
 
 h1,h2,h3,h4{
