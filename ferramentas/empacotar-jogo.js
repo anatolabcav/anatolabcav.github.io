@@ -5,7 +5,7 @@ const path = require('path');
 const zlib = require('zlib');
 
 const RAIZ = path.join(__dirname, '..');
-const SAIDA = path.join(RAIZ, 'anatomia-interativa.zip');
+const SAIDA = path.resolve(RAIZ, process.argv[2] || 'anatomia-interativa.zip');
 const PASTA_NO_ZIP = 'anatomia-interativa';
 
 const INCLUIR = [
@@ -15,6 +15,7 @@ const INCLUIR = [
   'package-lock.json',
   'INICIAR.bat',
   'Perguntas-modelo.xlsx',
+  'LICENCA.txt',
 ];
 
 const SCRIPTS_DO_PACOTE = { start: 'node server.js' };
@@ -145,7 +146,7 @@ function principal() {
   console.log(arquivos.length + ' arquivos empacotados');
   console.log('  cru:        ' + mb(cruas));
   console.log('  compactado: ' + mb(zip.length));
-  console.log('  em:         anatomia-interativa.zip, na pasta do projeto');
+  console.log('  em:         ' + path.relative(RAIZ, SAIDA));
 }
 
 principal();
